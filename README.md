@@ -39,11 +39,14 @@ npm run dev
 ```
 Now you should see it on localhost:5173
 
-## Contributions
+## Contributing
 Any contributions are welcome for now :)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
+## Contact
+If you have any questions or suggestions, feel free to reach out:
 
-
+- **GitHub:** [madina0801](https://github.com/madina0801)
+- **LinkedIn:** [Madina Tussupova](https://www.linkedin.com/in/madina-tussupova)
