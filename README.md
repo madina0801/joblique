@@ -43,5 +43,7 @@ Now you should see it on localhost:5173
 Any contributions are welcome for now :)
 
 ## License
+This project is licensed under the [MIT License](LICENSE).
+
 
 
