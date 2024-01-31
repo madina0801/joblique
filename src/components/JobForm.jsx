@@ -1,5 +1,6 @@
 // JobForm.js
 import React, { useState } from 'react';
+import '../index.css';
 
 function JobForm({ onAddJob }) {
   const [company, setCompany] = useState('');

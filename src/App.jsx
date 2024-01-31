@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import JobForm from './components/JobForm';
 import JobList from './components/JobList';
+import './index.css';
 
 function App() {
   const [jobApplications, setJobApplications] = useState([]);
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div>
-      <h1>Job Application Tracker</h1>
+      <h1>JobTrackr</h1>
       <JobForm onAddJob={addJobApplication} />
       <JobList jobApplications={jobApplications} />
     </div>
