@@ -40,7 +40,7 @@ npm run dev
 Now you should see it on localhost:5173
 
 ## Contributing
-Any contributions are welcome for now :)
+The project was just started. There are only basic functionality and styles. It'll grow and get more features with time. So any contributions are welcome for now :)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
