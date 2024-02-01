@@ -35,29 +35,18 @@ div {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  width: 100vh;
 }
 
-label {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: right;
-  width: 400px;
-  line-height: 26px;
-  margin-bottom: 10px;
-}
-
-input {
-  height: 20px;
-  flex: 0 0 200px;
-  margin-left: 10px;
-  vertical-align: 4em;
+form input {
+  margin: 0.5em 0 1.5em 0;
+  height: 2.5em;
 }
 
 form button {
@@ -69,7 +58,7 @@ form button {
   color: #fff;
   cursor: pointer;
   font-size: 100%;
-  margin: 2.5em auto;
+  margin: 1em auto;
   outline: none;
   overflow: hidden;
   padding: 1em 2em;
@@ -79,7 +68,7 @@ form button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 50%;
+  width: 80%;
 }
 
 form button:disabled {
