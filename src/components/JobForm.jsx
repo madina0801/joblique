@@ -10,11 +10,21 @@ function JobForm({ onAddJob }) {
  const handleSubmit = (e) => {
   e.preventDefault();
   const newApplication = { company, position, dateApplied };
+
+  saveToLocalStorage(newApplication);
+
   onAddJob(newApplication);
+  
   setCompany("");
   setPosition("");
   setDateApplied("");
  };
+
+ const saveToLocalStorage = (newApplication) => {
+  const existingApplications = JSON.parse(localStorage.getItem('jobApplications')) || [];
+  const updatedApplications = [...existingApplications, newApplication];
+  localStorage.setItem('jobApplications', JSON.stringify(updatedApplications));
+ }
 
  return (
   <div className="formContainer">
