@@ -1,5 +1,5 @@
 // JobList.js
-import React from 'react';
+import JobItem from './JobItem';
 
 function JobList({ jobApplications }) {
   return (
@@ -7,9 +7,7 @@ function JobList({ jobApplications }) {
       <h2>Job Applications</h2>
       <ul>
         {jobApplications.map((job, index) => (
-          <li key={index}>
-            <strong>{job.company}</strong> - {job.position} (Applied on {job.dateApplied})
-          </li>
+          <JobItem key={index} job={job} />
         ))}
       </ul>
     </div>
