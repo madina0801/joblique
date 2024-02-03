@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import JobForm from './components/JobForm';
 import JobList from './components/JobList';
 import './index.css';
+import Navbar from './components/layout/Navbar';
 
 function App() {
   const [jobApplications, setJobApplications] = useState([]);
@@ -16,11 +17,17 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>JobTrackr</h1>
-      <JobForm onAddJob={addJobApplication} />
-      <JobList jobApplications={jobApplications} />
+    <div >
+      <Navbar />
+
+      <div className='main'>
+        <h1>JobTrackr</h1>
+        <JobForm onAddJob={addJobApplication} />
+        <JobList jobApplications={jobApplications} />
+
+      </div>
     </div>
+
   );
 }
 
