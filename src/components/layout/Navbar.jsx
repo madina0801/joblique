@@ -26,11 +26,11 @@ function Navbar() {
             <div className="logo">  <a href="#">
                 <img className="logo" alt="Be natural logo" src="./logo.svg" style={{ height: '4.5rem', width: '3rem', position: 'absolute', top: '50%', transform: 'translateY(-50%)' }} />
             </a></div>
-            <div className="heading-primary" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}>JobTracker</div>
+            <div className="heading-primary" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}>JobTrackr</div>
             <nav className={`main-nav ${isMobileMenuOpen ? 'open' : ''}`} style={{ zIndex: '300' }}>
                 <ul className="main-nav-list" style={{ fontFamily: "Rubik" }}>
                     <li><a className="main-nav-link" href="/" style={{ fontFamily: "Rubik" }}>About</a></li>
-                    <li><a className="main-nav-link" href="https://github.com/madina0801/JobTrackr" >GitHub</a></li>
+                    <li><a className="main-nav-link" target='blank' href="https://github.com/madina0801/JobTrackr" >GitHub</a></li>
                 </ul>
             </nav>
             <button className="btn-mobile-nav" onClick={toggleMobileMenu} style={{ color: '#101741', fontSize: '30px' }}>
