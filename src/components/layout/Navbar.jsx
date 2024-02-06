@@ -24,7 +24,7 @@ function Navbar() {
      <img
       className="logo"
       alt="J"
-      src="./logo.svg"
+      href="logo.svg"
       style={{
        height: "4.5rem",
        width: "3rem",
