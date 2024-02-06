@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import logo from './logo';
 
 function Navbar() {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ function Navbar() {
      <img
       className="logo"
       alt="J"
-      src={require('./logo.svg')}
+      src={logo}
       style={{
        height: "4.5rem",
        width: "3rem",
