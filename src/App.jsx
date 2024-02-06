@@ -21,7 +21,6 @@ function App() {
       <Navbar />
 
       <div className='main'>
-        <h1>JobTrackr</h1>
         <JobForm onAddJob={addJobApplication} />
         <JobList jobApplications={jobApplications} />
 
