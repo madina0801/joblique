@@ -46,9 +46,9 @@ function Navbar() {
     className={`main-nav ${isMobileMenuOpen ? "open" : ""}`}
     style={{ zIndex: "300" }}
    >
-    <ul className="main-nav-list" style={{ fontFamily: "Rubik" }}>
+    <ul className="main-nav-list">
      <li>
-      <a className="main-nav-link" href="/" style={{ fontFamily: "Rubik" }}>
+      <a className="main-nav-link" href="/">
        About
       </a>
      </li>
