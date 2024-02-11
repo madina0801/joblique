@@ -46,9 +46,12 @@ form {
   width: 100vh;
 }
 
-form input {
+form input,select {
   margin: 0.5em 0 1.5em 0;
   height: 2.5em;
+}
+textarea{
+  margin: 0.5em 0 1.5em 0;
 }
 
 form button {
@@ -281,4 +284,48 @@ form button:focus {
   .main-nav-link:active {
     color: #405cf5;
   }
+}
+
+/* jobIem-Container CSS */
+.jobcontainer{
+  display: grid;
+gap: 2.5em;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+} 
+.jobitem{
+  background-color: #f8fafc;
+gap: 2em;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2),-2px -0px 3px 0 rgba(0, 0, 0, .06);
+  padding: 10px;
+}
+
+.jobitem div{
+gap: 0.8em;
+    display: flex;
+  justify-content: space-around;
+  
+}
+#status{
+  justify-content: center;
+}
+
+.jobitem img{
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.jobcontainer-grid{
+margin-top: 5em;
+  width: 80%;
+}
+
+/* Error css */
+.error{
+  color: red;
+ margin: auto;
 }
