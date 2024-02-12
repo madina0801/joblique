@@ -2,14 +2,14 @@ import JobItem from "./JobItem";
 
 function JobList({ jobApplications }) {
  return (
-  <div>
-   <h2>Job Applications</h2>
-   <ul>
-    {jobApplications.map((job, index) => (
-     <JobItem key={index} job={job} />
-    ))}
-   </ul>
-  </div>
+   <div className="jobcontainer-grid">
+    <h2 style={{textAlign:"center"}}>All Jobs</h2>
+     <div className="jobcontainer">
+       {jobApplications.map((job, index) => (
+         <JobItem key={index} job={job} />
+       ))}
+     </div>
+   </div>
  );
 }
 
