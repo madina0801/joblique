@@ -1,8 +1,10 @@
 import { React, useState, useEffect } from "react";
-import logo from '../../assets/logo.svg';
+import logo from "../../assets/logo.svg";
+import ModalAbout from "./ModalAbout";
 
 function Navbar() {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+ const [isOpen, setIsOpen] = useState(false);
 
  const toggleMobileMenu = () => {
   setIsMobileMenuOpen(!isMobileMenuOpen);
