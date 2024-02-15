@@ -1,10 +1,8 @@
 import { React, useState, useEffect } from "react";
 import logo from "../../assets/logo.svg";
-import ModalAbout from "./ModalAbout";
 
-function Navbar() {
+function Navbar({onAboutClick}) {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
- const [isOpen, setIsOpen] = useState(false);
 
  const toggleMobileMenu = () => {
   setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -50,7 +48,7 @@ function Navbar() {
    >
     <ul className="main-nav-list">
      <li>
-      <a className="main-nav-link" href="/">
+      <a className="main-nav-link" href="/" onClick={onAboutClick}>
        About
       </a>
      </li>
