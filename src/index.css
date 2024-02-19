@@ -31,7 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 h1 {
@@ -58,7 +57,7 @@ textarea {
 
 form button {
   backface-visibility: hidden;
-  background-color: #405cf5;
+  background-color: black;
   border-radius: 6px;
   border-width: 0;
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
@@ -101,36 +100,42 @@ form button:focus {
   }
 }
 
+/* Navbar */
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  height: 9rem;
-  padding: 0 4.8rem;
-  position: relative;
+  height: 2.5rem;
+  padding: 1.5rem 4.8rem;
+  margin-bottom: 2.5rem;
 }
 
 .logo {
-  height: 15.2rem;
+  height: 100%;
+}
+
+.logo-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .top {
-  height: 10rem;
+  height: 2rem;
 }
-
 
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 4.8rem;
-  color: #405cf5;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.main-nav-link {
   display: inline-block;
   text-decoration: none;
   color: #101741;
@@ -138,41 +143,16 @@ form button:focus {
   font-size: 1.8rem;
   transition: all 0.3s;
 }
-
-.not-main-nav-link:link,
-.main-nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #101741;
-  font-weight: 500;
-  font-size: 1.8rem;
-  transition: all 0.3s;
-}
-
 
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #405cf5;
 }
 
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  color: #405cf5;
-  background-color: #101741;
-}
-
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
-  background-color: #405cf5;
-}
-
 .btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
-
   display: none;
 }
 
@@ -205,17 +185,13 @@ form button:focus {
 
 .heading-primary {
   font-weight: 700;
-  color: #405cf5;
-  font-size: 3.5rem;
+  color: black;
+  font-size: 2.5rem;
   line-height: 1.05;
   letter-spacing: -0.5px;
 }
-
-
-
+/* Responsive Navbar */
 @media screen and (max-width:1230px) {
-
-
   .heading-primary {
     font-size: 2.3rem;
   }
@@ -241,7 +217,6 @@ form button:focus {
     width: 100%;
     height: 100vh;
     transform: translateX(100%);
-    color: #101741;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +224,6 @@ form button:focus {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-
   }
 
   .nav-open .main-nav {
@@ -257,17 +231,14 @@ form button:focus {
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
-    color: #101741;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
-
   }
 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
-
   }
 
   .main-nav-list {
@@ -275,16 +246,13 @@ form button:focus {
     gap: 4.8rem;
   }
 
-  .main-nav-link:link,
-  .main-nav-link:visited {
+  .main-nav-link:link {
     font-size: 3rem;
     color: #101741;
   }
 
-
-  .main-nav-link:hover,
-  .main-nav-link:active {
-    color: #405cf5;
+  .main-nav-link:hover {
+    color: #213547;
   }
 }
 
@@ -311,7 +279,6 @@ form button:focus {
   gap: 0.8em;
   display: flex;
   justify-content: space-around;
-
 }
 
 #status {
