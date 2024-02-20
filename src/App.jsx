@@ -1,46 +1,41 @@
-import React, { useEffect, useState } from 'react';
-import JobForm from './components/JobForm';
-import JobList from './components/JobList';
-import Navbar from './components/layout/Navbar';
-import ModalAbout from './components/layout/ModalAbout';
-import './index.css';
-import AboutModal from './components/layout/ModalAbout';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import JobForm from "./components/JobForm";
+import JobList from "./components/JobList";
+import Navbar from "./components/layout/Navbar";
+import About from "./components/layout/About";
+
+import "./index.css";
 
 function App() {
-  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
-  const [jobApplications, setJobApplications] = useState([]);
+ const [jobApplications, setJobApplications] = useState([]);
 
-  const openAboutModal = (e) => {
-    e.preventDefault();
-    setIsAboutModalOpen(true);
-  }
-  const closeAboutModal = (e) => {
-    e.preventDefault();
-    setIsAboutModalOpen(false);
-  }
+ useEffect(() => {
+  const existingApplications =
+   JSON.parse(localStorage.getItem("jobApplications")) || [];
+  setJobApplications(existingApplications);
+ }, []);
 
-  useEffect(() => {
-    const existingApplications = JSON.parse(localStorage.getItem('jobApplications')) || [];
-    setJobApplications(existingApplications);
-  }, []);
+ const addJobApplication = (newApplication) => {
+  setJobApplications([...jobApplications, newApplication]);
+ };
 
-  const addJobApplication = (newApplication) => {
-    setJobApplications([...jobApplications, newApplication]);
-  };
-
-  return (
-    <div >
-      <Navbar onAboutClick={openAboutModal} />
-      <AboutModal isOpen={isAboutModalOpen} onClose={closeAboutModal} />
-
-      <div className='main'>
-        <JobForm onAddJob={addJobApplication} />
-        <JobList jobApplications={jobApplications} />
-
-      </div>
-    </div>
-
-  );
+ return (
+  <div>
+   <Router>
+    <Navbar />
+    <Routes>
+     <Route path="/about" element={<About />} />
+     <Route exact path="/" />
+     {/* Define other routes that you need*/}
+    </Routes>
+   </Router>
+   <div className="main">
+    <JobForm onAddJob={addJobApplication} />
+    <JobList jobApplications={jobApplications} />
+   </div>
+  </div>
+ );
 }
 
 export default App;

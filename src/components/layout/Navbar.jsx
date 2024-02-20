@@ -1,7 +1,8 @@
 import { React, useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
-function Navbar({onAboutClick}) {
+function Navbar() {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
  const toggleMobileMenu = () => {
@@ -47,11 +48,12 @@ function Navbar({onAboutClick}) {
     style={{ zIndex: "300" }}
    >
     <ul className="main-nav-list">
-     <li>
-      <a className="main-nav-link" href="/" onClick={onAboutClick}>
-       About
-      </a>
-     </li>
+     <NavLink to="/" className="main-nav-link">
+      Home
+     </NavLink>
+     <NavLink to="/about" className="main-nav-link">
+      About
+     </NavLink>
      <li>
       <a
        className="main-nav-link"
