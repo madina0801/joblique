@@ -2,7 +2,7 @@ function About () {
   return (
       <div>
         <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi sit expedita non officia eum tenetur, rerum illo aperiam, quaerat soluta nobis ipsam dignissimos maiores doloribus nulla dolore debitis corporis.</p>
+        <p>JobTrackr is an application to keep track of your job applications. Made with love. &#x1F497;</p>
       </div>
   );
 };
