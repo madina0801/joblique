@@ -1,6 +1,9 @@
 import { React, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+
+import { IoMenu, IoClose } from "react-icons/io5";
 import logo from "../../assets/logo.svg";
+
 
 function Navbar() {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -69,12 +72,12 @@ function Navbar() {
    <button
     className="btn-mobile-nav"
     onClick={toggleMobileMenu}
-    style={{ color: "#101741", fontSize: "30px" }}
    >
-    <ion-icon
+    {isMobileMenuOpen ? <IoClose className="icon-mobile-nav" /> : <IoMenu className="icon-mobile-nav" />}
+    {/* <ion-icon
      className="icon-mobile-nav"
      name={isMobileMenuOpen ? "close-outline" : "menu-outline"}
-    ></ion-icon>
+    ></ion-icon> */}
    </button>
   </header>
  );
