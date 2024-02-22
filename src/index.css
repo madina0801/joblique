@@ -138,7 +138,7 @@ form button:focus {
 .main-nav-link {
   display: inline-block;
   text-decoration: none;
-  color: #101741;
+  color: black;
   font-weight: 500;
   font-size: 1.5rem;
   transition: all 0.3s;
@@ -248,11 +248,11 @@ form button:focus {
 
   .main-nav-link:link {
     font-size: 3rem;
-    color: #101741;
+    color: black;
   }
 
   .main-nav-link:hover {
-    color: #213547;
+    color: grey;
   }
 }
 
