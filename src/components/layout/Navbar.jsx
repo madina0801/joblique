@@ -48,10 +48,10 @@ function Navbar() {
     style={{ zIndex: "300" }}
    >
     <ul className="main-nav-list">
-     <NavLink to="/" className="main-nav-link">
+     <NavLink to="/" className="main-nav-link" onClick={toggleMobileMenu}>
       Home
      </NavLink>
-     <NavLink to="/about" className="main-nav-link">
+     <NavLink to="/about" className="main-nav-link" onClick={toggleMobileMenu}>
       About
      </NavLink>
      <li>
@@ -59,6 +59,7 @@ function Navbar() {
        className="main-nav-link"
        target="blank"
        href="https://github.com/madina0801/JobTrackr"
+       onClick={toggleMobileMenu}
       >
        GitHub
       </a>
