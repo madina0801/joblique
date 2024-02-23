@@ -5,7 +5,7 @@ import briefcase from "../assets/briefcase.svg";
 import list from "../assets/list.svg";
 import { IoTrashBin } from "react-icons/io5";
 
-function JobItem({ job, idx }) {
+function JobItem({ job, idx, setJobApplications }) {
   const handleDeleteJob = () => {
     const existingApplications =
       JSON.parse(localStorage.getItem("jobApplications")) || [];
@@ -16,6 +16,7 @@ function JobItem({ job, idx }) {
         "jobApplications",
         JSON.stringify(existingApplications)
       );
+      setJobApplications([...existingApplications])
     } else {
       console.log("no item found");
     }
