@@ -25,6 +25,8 @@ a:hover {
 
 body {
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .main {
@@ -316,6 +318,7 @@ form button:focus {
   margin: auto;
 }
 
+
 /* Modal About */
 /* styles.css */
 .modal-overlay {
@@ -358,3 +361,13 @@ form button:focus {
 .modal-content button:hover {
   background-color: #0056b3;
 }
+
+.footer-container {
+  position: sticky;
+  background-color: black;
+  color: white;
+  margin-top: 20%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
