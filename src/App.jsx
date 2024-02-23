@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import JobApp from "./components/JobApp";
 import Navbar from "./components/layout/Navbar";
 import About from "./components/layout/About";
+import Footer from "./components/layout/Footer";
 
 import "./index.css";
 
@@ -18,6 +19,7 @@ function App() {
      {/* Define other routes that you need*/}
     </Routes>
    </Router>
+   <Footer />
   </div>
  );
 }
