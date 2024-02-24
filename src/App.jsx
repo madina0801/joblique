@@ -16,7 +16,6 @@ function App() {
     <Routes>
      <Route path="/about" element={<About />} />
      <Route exact path="/" element={<JobApp />} />
-     {/* Define other routes that you need*/}
     </Routes>
    </Router>
    <Footer />
