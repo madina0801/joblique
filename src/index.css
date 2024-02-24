@@ -290,7 +290,7 @@ form button:focus {
 #status {
   justify-content: center;
 }
-/*my modification*/
+
 #delete-btn {
   cursor: pointer;
 }
