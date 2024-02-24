@@ -62,7 +62,8 @@ form button {
   background-color: black;
   border-radius: 6px;
   border-width: 0;
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
   color: #fff;
   cursor: pointer;
   font-size: 100%;
@@ -72,7 +73,7 @@ form button {
   padding: 1em 2em;
   text-align: center;
   text-transform: none;
-  transition: all .2s, box-shadow .08s ease-in;
+  transition: all 0.2s, box-shadow 0.08s ease-in;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -84,7 +85,9 @@ form button:disabled {
 }
 
 form button:focus {
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -193,7 +196,7 @@ form button:focus {
   letter-spacing: -0.5px;
 }
 /* Responsive Navbar */
-@media screen and (max-width:1230px) {
+@media screen and (max-width: 1230px) {
   .heading-primary {
     font-size: 2.3rem;
   }
@@ -273,7 +276,8 @@ form button:focus {
   justify-content: center;
   flex-direction: column;
   border-radius: 3px;
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2), -2px -0px 3px 0 rgba(0, 0, 0, .06);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
+    -2px -0px 3px 0 rgba(0, 0, 0, 0.06);
   padding: 10px;
 }
 
@@ -286,7 +290,18 @@ form button:focus {
 #status {
   justify-content: center;
 }
-
+/*my modification*/
+#delete-btn {
+  cursor: pointer;
+}
+#delete-btn:hover {
+  color: red;
+  transition: 0.3s;
+}
+#delete-btn svg {
+  color: red;
+  margin-right: 0.2rem;
+}
 .jobitem img {
   height: 1.2em;
   width: 1.2em;
@@ -303,6 +318,50 @@ form button:focus {
   margin: auto;
 }
 
+
+/* Modal About */
+/* styles.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+=======
 .footer-container {
   position: sticky;
   background-color: black;
@@ -311,3 +370,4 @@ form button:focus {
   padding: 1.5rem;
   text-align: center;
 }
+
