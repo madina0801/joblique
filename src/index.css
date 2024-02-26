@@ -303,7 +303,7 @@ form button:focus {
   color: red;
   margin-right: 0.2rem;
 }
-.jobitem img {
+.jobitem-icon {
   height: 1.2em;
   width: 1.2em;
 }
