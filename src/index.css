@@ -30,6 +30,13 @@ body {
   padding: 0;
 }
 
+.container{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -320,10 +327,9 @@ form button:focus {
 }
 
 .footer-container {
-  position: sticky;
+  margin-top: auto;
   background-color: black;
   color: white;
-  margin-top: 20%;
   padding: 1.5rem;
   text-align: center;
 }
