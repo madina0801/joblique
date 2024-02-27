@@ -320,9 +320,7 @@ form button:focus {
 }
 
 .footer-container {
-  position: fixed;
-  bottom:0;
-  width:100%;
+  position: sticky;
   background-color: black;
   color: white;
   margin-top: 20%;
