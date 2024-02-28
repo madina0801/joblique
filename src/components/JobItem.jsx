@@ -1,9 +1,3 @@
-import day from "../assets/day.svg";
-import building from "../assets/building.svg";
-import position from "../assets/position.svg";
-import briefcase from "../assets/briefcase.svg";
-import list from "../assets/list.svg";
-
 import { IoTrashBin, IoPersonSharp, IoBriefcase, IoCalendar } from "react-icons/io5";
 import { FaRegBuilding, FaListCheck } from "react-icons/fa6";
 
