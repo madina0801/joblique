@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 :root {
   font-family: "DM Sans", sans-serif;
@@ -30,11 +33,11 @@ body {
   padding: 0;
 }
 
-.container{
-  height:100vh;
+.container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap:25px;
+  gap: 25px;
 }
 
 .main {
@@ -201,8 +204,19 @@ form button:focus {
   color: black;
   font-size: 2.5rem;
   line-height: 1.05;
-  letter-spacing: -0.5px;
 }
+
+.nav-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+
+
+
+
 /* Responsive Navbar */
 @media screen and (max-width: 1230px) {
   .heading-primary {
@@ -246,11 +260,11 @@ form button:focus {
     transform: translateX(0);
   }
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open .mobile-nav-link[name="close-outline"] {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .mobile-nav-linkv[name="menu-outline"] {
     display: none;
   }
 
@@ -302,14 +316,17 @@ form button:focus {
 #delete-btn {
   cursor: pointer;
 }
+
 #delete-btn:hover {
   color: red;
   transition: 0.3s;
 }
+
 #delete-btn svg {
   color: red;
   margin-right: 0.2rem;
 }
+
 .jobitem-icon {
   height: 1.2em;
   width: 1.2em;
@@ -333,3 +350,7 @@ form button:focus {
   padding: 1.5rem;
   text-align: center;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
