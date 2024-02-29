@@ -15,7 +15,7 @@ function JobApp() {
     setJobApplications([...jobApplications, newApplication]);
   };
   return (
-    <div className="main">
+    <div className="container-fluid mx-auto">
       <JobForm onAddJob={addJobApplication} />
       <JobList
         jobApplications={jobApplications}
