@@ -10,11 +10,19 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  --darkblue-color: "#2B2D42";
+  --lightblue-color: "#8D99AE";
+  --light-color: "#EDF2F4";
+  --danger-color: "#D90429";
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-link:hover {
+  color: var(--darkblue-color);
 }
 
 a {
