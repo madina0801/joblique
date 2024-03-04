@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "../index.css";
 import Error from "./Error";
 
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 function JobForm({ onAddJob }) {
  const [isfill, setIsfill] = useState(true);
  const [company, setCompany] = useState("");
@@ -41,68 +43,125 @@ function JobForm({ onAddJob }) {
  };
 
  return (
-  <div className="container-fluid">
-   <form onSubmit={handleSubmit}>
-    <label className="mb-2" htmlFor="company">Company:</label>
-    <input
-     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-     id="company"
-     type="text"
-     value={company}
-     onChange={(e) => setCompany(e.target.value)}
-    />
+  <form className="w-full max-w-lg" onSubmit={handleSubmit}>
+   <div className="flex flex-wrap -mx-3 mb-6">
+    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+     <label
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      htmlFor="company"
+     >
+      Company:
+     </label>
+     <input
+      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+      id="company"
+      type="text"
+      value={company}
+      onChange={(e) => setCompany(e.target.value)}
+     />
+    </div>
 
-    <label className="mb-2" htmlFor="position">Position:</label>
-    <input
-     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-     id="position"
-     type="text"
-     value={position}
-     onChange={(e) => setPosition(e.target.value)}
-    />
+    <div className="w-full md:w-1/2 px-3">
+     <label
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      htmlFor="position"
+     >
+      Position:
+     </label>
+     <input
+      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+      id="position"
+      type="text"
+      value={position}
+      onChange={(e) => setPosition(e.target.value)}
+     />
+    </div>
+   </div>
 
-    <label className="mb-2" htmlFor="date"> Date Applied:</label>
-    <input
-     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-     id="date"
-     type="date"
-     value={dateApplied}
-     onChange={(e) => setDateApplied(e.target.value)}
-    />
+   <div className="flex flex-wrap -mx-3 mb-2">
+    <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+     <label
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      htmlFor="date"
+     >
+      {" "}
+      Date Applied:
+     </label>
+     <input
+      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+      id="date"
+      type="date"
+      value={dateApplied}
+      onChange={(e) => setDateApplied(e.target.value)}
+     />
+    </div>
 
-    <label className="mb-2" htmlFor="type"> Job Type:</label>
-    <select
-     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 mb-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-     id="type"
-     onChange={(e) => setJobtype(e.target.value)}
-    >
-     <option value="">Select</option>
-     <option value="Internship">Internship</option>
-     <option value="Part Time">Part time</option>
-     <option value="Full Time">Full time</option>
-    </select>
+    <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+     <label
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      htmlFor="type"
+     >
+      {" "}
+      Job Type:
+     </label>
+     <div className="relative">
+      <select
+       className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+       id="type"
+       onChange={(e) => setJobtype(e.target.value)}
+      >
+       <option className="text-sm" value="">
+        Select
+       </option>
+       <option value="Internship">Internship</option>
+       <option value="Part Time">Part time</option>
+       <option value="Full Time">Full time</option>
+      </select>
 
-    <label className="mb-2" htmlFor="status"> Status:</label>
-    <select
-     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 mb-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-     id="status"
-     onChange={(e) => setStatus(e.target.value)}
-    >
-     <option value="">Select</option>
-     <option value="Applied">Applied</option>
-     <option value="Pending">Pending</option>
-     <option value="Interviewing">Interviewing</option>
-     <option value="Hired">Hired</option>
-     <option value="Rejected">Rejected</option>
-    </select>
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+       <RiArrowDropDownLine className="fill-current h-5 w-5" />
+      </div>
+     </div>
+    </div>
 
-    {!isfill && <Error className="text-danger" />}
+    <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+     <label
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      htmlFor="status"
+     >
+      {" "}
+      Status:
+     </label>
+     <div className="relative">
+      <select
+       className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+       id="status"
+       onChange={(e) => setJobtype(e.target.value)}
+      >
+       <option value="">Select</option>
+       <option value="Applied">Applied</option>
+       <option value="Pending">Pending</option>
+       <option value="Interviewing">Interviewing</option>
+       <option value="Hired">Hired</option>
+       <option value="Rejected">Rejected</option>
+      </select>
 
-    <button className="rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800" type="submit">
-      <span className="text-darkblue">Add Job</span>
-    </button>
-   </form>
-  </div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+       <RiArrowDropDownLine className="fill-current h-5 w-5" />
+      </div>
+     </div>
+    </div>
+
+   </div>
+   {!isfill && <Error className="text-danger" />}
+
+   <button
+    className="rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+    type="submit"
+   >
+    <span className="text-darkblue">Add Job</span>
+   </button>
+  </form>
  );
 }
 
