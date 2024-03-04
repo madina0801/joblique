@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: "DM Sans", sans-serif;
   line-height: 1.5;
@@ -131,7 +135,3 @@ h1 {
   padding: 1.5rem;
   text-align: center;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
