@@ -1,6 +1,6 @@
 function Footer() {
 	return (
-		<div className="footer-container">
+		<div className="bg-darkblue">
 			JobTrackr 2024 &copy; Madina Tusupova
 		</div>
 	)
