@@ -151,16 +151,16 @@ function JobForm({ onAddJob }) {
       </div>
      </div>
     </div>
-
    </div>
    {!isfill && <Error className="text-danger" />}
-
-   <button
-    className="rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
-    type="submit"
-   >
-    <span className="text-darkblue">Add Job</span>
-   </button>
+   <div className="flex justify-center mt-5">
+    <button
+     className="bg-transparent font-semibold text-darkblue border py-2 px-4 border-darkblue hover:bg-darkblue hover:text-light rounded transition ease-in-out delay-150 hover:transition-all"
+     type="submit"
+    >
+     Add Job
+    </button>
+   </div>
   </form>
  );
 }
