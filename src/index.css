@@ -22,13 +22,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -75,24 +68,6 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.jobitem {
-  background-color: #f8fafc;
-  gap: 2em;
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 3px;
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
-    -2px -0px 3px 0 rgba(0, 0, 0, 0.06);
-  padding: 10px;
-}
-
-.jobitem div {
-  gap: 0.8em;
-  display: flex;
-  justify-content: space-around;
-}
 
 #status {
   justify-content: center;

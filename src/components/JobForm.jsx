@@ -43,6 +43,7 @@ function JobForm({ onAddJob }) {
  };
 
  return (
+  <div className="flex justify-center">
   <form className="w-full max-w-lg" onSubmit={handleSubmit}>
    <div className="flex flex-wrap -mx-3 mb-6">
     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -162,6 +163,7 @@ function JobForm({ onAddJob }) {
     </button>
    </div>
   </form>
+  </div>
  );
 }
 
