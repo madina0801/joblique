@@ -1,9 +1,9 @@
 function Footer() {
-	return (
-		<div className="bg-darkblue text-lightblue w-screen text-center mt-auto p-6">
-			JobTrackr 2024 &copy; Madina Tusupova
-		</div>
-	)
+ return (
+  <footer className="sticky top-[100vh]">
+   Job Trackr 2024 &copy; Madina Tussupova
+  </footer>
+ );
 }
 
 export default Footer;

@@ -7,6 +7,7 @@ function JobList({ jobApplications, setJobApplications }) {
   const storedJobs = JSON.parse(localStorage.getItem("jobApplications")) || [];
   setSavedJobs(storedJobs);
  }, []);
+ console.log(jobApplications);
 
  return (
   <div>
