@@ -19,35 +19,36 @@ function JobItem({ job, idx, setJobApplications }) {
  };
 
  return (
-  <div className="bg-slate-50 gap-[2em] w-[300px] flex justify-center flex-col shadow-lg p-2.5 rounded-[3px]">
+  // className="bg-slate-50 gap-[2em] w-[300px] flex justify-center flex-col shadow-lg p-2.5 rounded-[3px]"
+  <div className="bg-lightblue w-[250px] p-7">
 
-   <div className="gap-[0.8em] flex justify-around">
-    <div>
-     <IoPersonSharp className="h-[1.2em] w-[1.2em]" />
+   <div className="flex space-x-12">
+    <div className="flex items-center">
+     <IoPersonSharp className="w-6 h-6 mr-2" />
      <span>{job.position}</span>
     </div>
 
-    <div>
-     <FaRegBuilding className="h-[1.2em] w-[1.2em]" />
+    <div className="flex items-center">
+     <FaRegBuilding className="w-6 h-6 mr-2" />
      <span>{job.company}</span>
     </div>
    </div>
 
-   <div className="gap-[0.8em] flex justify-around">
-    <div>
-     <IoBriefcase className="h-[1.2em] w-[1.2em]" />
+   <div>
+    <div className="flex items-center">
+     <IoBriefcase className="w-6 h-6 mr-2" />
      <span>{job.jobtype}</span>
     </div>
 
-    <div>
-     <IoCalendar className="h-[1.2em] w-[1.2em]"/>
+    <div className="flex items-center">
+     <IoCalendar className="w-6 h-6 mr-2"/>
      <span>{job.dateApplied}</span>
     </div>
    </div>
 
-   <div className="gap-[0.8em] flex justify-around">
+   <div className="flex items-center">
     <div id="status">
-     <FaListCheck className="h-[1.2em] w-[1.2em]" />
+     <FaListCheck className="w-6 h-6 mr-2" />
      <span>{job.status}</span>
     </div>
 

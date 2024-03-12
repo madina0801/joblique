@@ -15,7 +15,7 @@ function JobApp() {
   setJobApplications([...jobApplications, newApplication]);
  };
  return (
-  <div className="h-screen">
+  <div>
    <JobForm onAddJob={addJobApplication} />
    <JobList
     jobApplications={jobApplications}
