@@ -20,41 +20,41 @@ function JobItem({ job, idx, setJobApplications }) {
 
  return (
   // className="bg-slate-50 gap-[2em] w-[300px] flex justify-center flex-col shadow-lg p-2.5 rounded-[3px]"
-  <div className="bg-lightblue w-[250px] p-7">
+  <div className="bg-light text-darkblue w-[300px] p-7 rounded-lg shadow-lg">
 
-   <div className="flex space-x-12">
-    <div className="flex items-center">
-     <IoPersonSharp className="w-6 h-6 mr-2" />
-     <span>{job.position}</span>
+   <div className="flex space-x-7 mb-7">
+    <div className="flex items-center text-sm">
+     <IoPersonSharp className="w-6 h-6 mr-1" />
+     <span className="">{job.position}</span>
     </div>
 
-    <div className="flex items-center">
-     <FaRegBuilding className="w-6 h-6 mr-2" />
+    <div className="flex items-center text-sm">
+     <FaRegBuilding className="w-6 h-6 mr-1" />
      <span>{job.company}</span>
     </div>
    </div>
 
-   <div>
-    <div className="flex items-center">
-     <IoBriefcase className="w-6 h-6 mr-2" />
+   <div className="flex space-x-7 mb-7">
+    <div className="flex items-center text-sm">
+     <IoBriefcase className="w-6 h-6 mr-1" />
      <span>{job.jobtype}</span>
     </div>
 
-    <div className="flex items-center">
-     <IoCalendar className="w-6 h-6 mr-2"/>
+    <div className="flex items-center text-sm">
+     <IoCalendar className="w-6 h-6 mr-1"/>
      <span>{job.dateApplied}</span>
     </div>
    </div>
 
-   <div className="flex items-center">
-    <div id="status">
-     <FaListCheck className="w-6 h-6 mr-2" />
+   <div className="flex items-center place-content-around">
+    <div id="status" className="text-sm">
+     <FaListCheck className="w-6 h-6 mr-1" />
      <span>{job.status}</span>
     </div>
 
-    <div id="delete-btn">
+    <div id="delete-btn" className="text-sm">
      <span onClick={handleDeleteJob}>
-      <IoTrashBin className="h-[1.2em] w-[1.2em]" />
+      <IoTrashBin className="h-6 w-6 mr-1" />
       Delete
      </span>
     </div>
