@@ -1,4 +1,9 @@
-import { IoTrashBin, IoPersonSharp, IoBriefcase, IoCalendar } from "react-icons/io5";
+import {
+ IoTrashBin,
+ IoPersonSharp,
+ IoBriefcase,
+ IoCalendar,
+} from "react-icons/io5";
 import { FaRegBuilding, FaListCheck } from "react-icons/fa6";
 
 function JobItem({ job, idx, setJobApplications }) {
@@ -20,15 +25,18 @@ function JobItem({ job, idx, setJobApplications }) {
 
  return (
   <div className="bg-light border border-darkblue text-darkblue w-[300px] p-7 rounded-lg shadow-xl shadow-lightblue">
-
    <div className="flex space-x-7 mb-7">
     <div className="flex items-center text-sm">
-     <IoPersonSharp className="w-6 h-6 mr-1" />
+     <div>
+      <IoPersonSharp className="w-6 h-6 mr-1" />
+     </div>
      <span className="">{job.position}</span>
     </div>
 
     <div className="flex items-center text-sm">
-     <FaRegBuilding className="w-6 h-6 mr-1" />
+     <div>
+      <FaRegBuilding className="w-6 h-6 mr-1" />
+     </div>
      <span>{job.company}</span>
     </div>
    </div>
@@ -40,7 +48,7 @@ function JobItem({ job, idx, setJobApplications }) {
     </div>
 
     <div className="flex items-center text-sm">
-     <IoCalendar className="w-6 h-6 mr-1"/>
+     <IoCalendar className="w-6 h-6 mr-1" />
      <span>{job.dateApplied}</span>
     </div>
    </div>
@@ -58,7 +66,6 @@ function JobItem({ job, idx, setJobApplications }) {
      </span>
     </div>
    </div>
-   
   </div>
  );
 }
