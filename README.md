@@ -14,7 +14,7 @@
 
 ## Description
 
-**JobTrackr** simplifies the task of managing your job applications by providing a convenient platform where you can input and track the jobs you've applied to. Say goodbye to scattered notes and disorganized spreadsheets – with **JobTrackr**, you can stay organized and focused on landing your dream job.
+**JobTrackr** simplifies the task of managing your job applications by providing a convenient platform where you can input and track the jobs you've applied to. Say goodbye to scattered notes and disorganized spreadsheets – with **JobTrackr**, you can stay organized and focused on landing your dream job!
 
 ## Features
 
