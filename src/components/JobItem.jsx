@@ -19,8 +19,7 @@ function JobItem({ job, idx, setJobApplications }) {
  };
 
  return (
-  // className="bg-slate-50 gap-[2em] w-[300px] flex justify-center flex-col shadow-lg p-2.5 rounded-[3px]"
-  <div className="bg-light text-darkblue w-[300px] p-7 rounded-lg shadow-lg">
+  <div className="bg-light border border-darkblue text-darkblue w-[300px] p-7 rounded-lg shadow-xl shadow-lightblue">
 
    <div className="flex space-x-7 mb-7">
     <div className="flex items-center text-sm">
