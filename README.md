@@ -4,7 +4,7 @@
 
 ## Documentation
 
-The documentation is structured into several segments:
+The documentation is segmented into these sections:
 
 - [Description](#description)
 - [Features](#features)
@@ -16,7 +16,7 @@ The documentation is structured into several segments:
 
 ## Description
 
-**JobTrackr** simplifies the task of managing your job applications by providing a convenient platform where you can input and track the jobs you've applied to. Say goodbye to scattered notes and disorganized spreadsheets – with **JobTrackr**, you can stay organized and focused on landing your dream job!
+**JobTrackr** simplifies the task of managing your job applications by providing a convenient platform where you can input and track the jobs you've applied to. Say goodbye to scattered notes and disorganized spreadsheets – with **JobTrackr**, maintain organization and concentrate on securing your ideal job!
 
 ## Features
 
@@ -52,7 +52,7 @@ To use **JobTrackr** locally, run the following command:
 npm run dev
 ````
 
-Now you should see it on `localhost:5173`.
+Now you should be able to access it at `localhost:5173`.
 
 ## Contributing
 
