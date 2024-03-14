@@ -1,8 +1,8 @@
-# JobTrackr
+# 💼 JobTrackr
 
 **JobTrackr** is a user-friendly and efficient job application tracker designed to streamline your job search process.
 
-## Documentation
+## 📝 Documentation
 
 The documentation is segmented into these sections:
 
@@ -14,15 +14,15 @@ The documentation is segmented into these sections:
 - [License](#license)
 - [Contact](#contact)
 
-## Description
+## 👀 Description
 
 **JobTrackr** simplifies the task of managing your job applications by providing a convenient platform where you can input and track the jobs you've applied to. Say goodbye to scattered notes and disorganized spreadsheets – with **JobTrackr**, maintain organization and concentrate on securing your ideal job!
 
-## Features
+## ✨ Features
 
 - **Job Application Management:** Input and manage the details of the jobs you've applied to, like including company name, job title or application status.
 
-## Installation
+## 🛠️ Installation
 
 To install **JobTrackr**, follow these steps:
 
@@ -44,7 +44,7 @@ To install **JobTrackr**, follow these steps:
     npm install
     ```
 
-## Usage
+## 🚀 Usage
 
 To use **JobTrackr** locally, run the following command:
 
@@ -54,15 +54,15 @@ npm run dev
 
 Now you should be able to access it at `localhost:5173`.
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions to **JobTrackr**! While the project is still in its early stages with basic functionality and styles, it will continue to grow and evolve with time. For guidelines on contributing, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). 🤗
 
-## License
+## 📄 License
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 
-## Contact
+## ☎️ Contact
 
 If you have any questions or suggestions, feel free to reach out:
 
