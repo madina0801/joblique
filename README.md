@@ -2,7 +2,9 @@
 
 **JobTrackr** is a user-friendly and efficient job application tracker designed to streamline your job search process.
 
-## Table of Contents
+## Documentation
+
+The documentation is structured into several segments:
 
 - [Description](#description)
 - [Features](#features)
