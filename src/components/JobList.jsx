@@ -16,8 +16,8 @@ function JobList({ jobApplications, setJobApplications }) {
      <h2 className="">All Jobs</h2>
     </div>
    )}
-   <div className="w-3/5 mx-auto h-screen">
-    <div className="grid gap-[2.5em] grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
+   <div className="flex justify-center m-10">
+    <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
      {jobApplications.map((job, index) => (
       <JobItem
        key={index}
