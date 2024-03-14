@@ -1,8 +1,8 @@
-# Contributing to JobTrackr
+# 🤝 Contributing to JobTrackr
 
 Thank you for considering contributing to **JobTrackr**! I appreciate your interest and would like to hear your feedback. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/madina-tussupova/) if you have any ideas or *constructive* critique.
 
-## How to Contribute?
+## ✍️ How to Contribute?
 
 There are many ways you can contribute, including, but not limited to:
 
@@ -12,7 +12,7 @@ There are many ways you can contribute, including, but not limited to:
 - Writing test (in progress).
 - Reporting bugs.
 
-## Rules
+## ❗️ Rules
 
 To maintain consistency and ensure the quality of the project, please adhere to the following guidelines:
 
@@ -22,6 +22,6 @@ To maintain consistency and ensure the quality of the project, please adhere to 
 4. Make sure your branch is up to date with the main branch.
 5. Be nice and supportive.
 
-## First Timer?
+## 🐱 First Timer?
 
-Please, check out this [guide](https://www.freecodecamp.org/news/git-and-github-workflow-for-open-source/) to get started. 🐱
+Please, check out this [guide](https://www.freecodecamp.org/news/git-and-github-workflow-for-open-source/) to get started.
