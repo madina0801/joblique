@@ -66,5 +66,10 @@ This project is licensed under the terms of the [MIT License](LICENSE).
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **GitHub:** [madina0801](https://github.com/madina0801)
-- **LinkedIn:** [Madina Tussupova](https://www.linkedin.com/in/madina-tussupova)
+<p align="left">
+<a href="https://github.com/madina0801">
+  <img alt="GitHub" title="GitHub" src="https://img.shields.io/badge/madina0801-%23c9510c?style=for-the-badge&logo=github"/></a>
+
+<a href="https://www.linkedin.com/in/madina-tussupova">
+  <img alt="LinkedIn" title="LinkedIn" src="https://img.shields.io/badge/Madina%20Tussupova-%230077B5?style=for-the-badge&logo=linkedin&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmadina-tussupova"/></a>
+</p>
