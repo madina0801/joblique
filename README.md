@@ -6,13 +6,13 @@
 
 The documentation is segmented into these sections:
 
-- [Description](#description)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Description](#-description)
+- [Features](#-features)
+- [Installation](#%EF%B8%8F-installation)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#%EF%B8%8F-contact)
 
 ## 👀 Description
 
