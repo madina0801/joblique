@@ -16,7 +16,7 @@ The documentation is segmented into these sections:
 
 ## 👀 Description
 
-**JobTrackr** simplifies the task of managing your job applications by providing a convenient platform where you can input and track the jobs you've applied to. Say goodbye to scattered notes and disorganized spreadsheets – with **JobTrackr**, maintain organization and concentrate on securing your ideal job!
+**JobTrackr** simplifies the task of managing your job applications by providing a convenient platform where you can input and track the jobs you've applied to. Say goodbye to scattered notes and disorganized spreadsheets – with **JobTrackr**, focus on securing your ideal job!
 
 ## ✨ Features
 
@@ -56,7 +56,9 @@ Now you should be able to access it at `localhost:5173`.
 
 ## 🤝 Contributing
 
-We welcome contributions to **JobTrackr**! While the project is still in its early stages with basic functionality and styles, it will continue to grow and evolve with time. For guidelines on contributing, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). 🤗
+We welcome contributions to **JobTrackr**! While the project is still in its early stages, it will continue to grow and evolve with time.
+
+For guidelines on contributing, please refer to [CONTRIBUTING.md](CONTRIBUTING.md). 🤗
 
 ## 📄 License
 
