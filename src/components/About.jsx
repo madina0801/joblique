@@ -7,9 +7,9 @@ function About() {
     I've applied for. And decided to share it with everyone. JobTrackr is an
     open-source project. So, everyone can contribute, I review code changes and
     the contributors can see their changes live. I aim to make this community
-    friendly and inviting. <br />
-    Created with love. &#x1F497;
+    friendly and inviting.
    </p>
+   <p className="text-center text-md mt-3">Created with love. &#x1F497;</p>
   </div>
  );
 }
