@@ -10,7 +10,7 @@ import "./index.css";
 
 function App() {
  return (
-  <div className="overflow-x-hidden">
+  <div className="overflow-x-hidden min-h-dvh">
    <Router>
     <Navbar />
     <Routes>
