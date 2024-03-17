@@ -110,3 +110,30 @@ h1 {
   padding: 1.5rem;
   text-align: center;
 }
+/* index.css */
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px; /* Adjust the distance from the top */
+  right: 20px; /* Adjust the distance from the right */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff; /* Light mode background color */
+  color: #333; /* Light mode text color */
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+/* Dark mode toggle button hover effect */
+.dark-mode-toggle:hover {
+  background-color: #f0f0f0; /* Light mode hover background color */
+}
