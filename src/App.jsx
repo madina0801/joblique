@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+ 
 import JobApp from "./components/JobApp";
 import Navbar from "./components/layout/Navbar";
 import About from "./components/About";

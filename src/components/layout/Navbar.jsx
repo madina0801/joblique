@@ -2,6 +2,8 @@ import { React, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import { IoMenu, IoClose } from "react-icons/io5";
+import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
+
 import logo from "../../assets/logo.svg";
 
 function Navbar() {
@@ -9,6 +11,12 @@ function Navbar() {
 
  const toggleMobileMenu = () => {
   setIsMobileMenuOpen(!isMobileMenuOpen);
+ };
+
+ const [darkMode, setDarkMode] = useState(false);
+
+ const toggleDarkMode = () => {
+  setDarkMode(!darkMode);
  };
 
  const content = (
@@ -42,9 +50,7 @@ function Navbar() {
  return (
   <nav className="w-screen">
    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <div
-     className="flex items-center space-x-3 rtl:space-x-reverse"
-    >
+    <div className="flex items-center space-x-3 rtl:space-x-reverse">
      <img src={logo} className="h-8" alt="JobTrackr Logo" />
      <span className="self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-white">
       JobTrackr
@@ -75,6 +81,12 @@ function Navbar() {
       <NavLink to="https://github.com/madina0801/JobTrackr" target="blank">
        <li className="nav-link">GitHub</li>
       </NavLink>
+      <button
+       className="h-6 w-10 flex bg-light rounded-lg justify-center items-center"
+       onClick={toggleDarkMode}
+      >
+       {darkMode ? <MdOutlineLightMode /> : <MdDarkMode />}
+      </button>
      </ul>
     </div>
    </div>
