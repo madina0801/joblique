@@ -21,15 +21,15 @@ function Navbar() {
 
  const content = (
   <>
-   <div className="lg:hidden md:hidden block absolute top-16 w-full left-0 right-0 bg-darkblue text-light transition z-50">
-    <ul className="text-center text-xl p-20">
+   <div className="block md:hidden absolute top-16 w-full h-svh left-0 right-0 bg-light/50 dark:bg-darkblue/50 text-darkblue dark:text-light transition z-50 backdrop-blur-sm">
+    <ul className="text-center text-2xl font-medium p-20">
      <NavLink to="/" onClick={toggleMobileMenu}>
-      <li className="hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
+      <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
        Home
       </li>
      </NavLink>
      <NavLink to="/about" onClick={toggleMobileMenu}>
-      <li className="hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
+      <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
        About
       </li>
      </NavLink>
