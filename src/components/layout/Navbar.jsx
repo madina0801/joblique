@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
-import logo from "../../assets/logo.svg";
+import lightModeLogo from "../../assets/logo-light-mode.svg";
+import darkModeLogo from "../../assets/logo-dark-mode.png";
 
 function Navbar() {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,7 +53,7 @@ function Navbar() {
   <nav className="w-screen">
    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <div className="flex items-center space-x-3 rtl:space-x-reverse">
-     <img src={logo} className="h-8" alt="JobTrackr Logo" />
+     <img src={darkMode ? darkModeLogo : lightModeLogo } className="h-8" alt="JobTrackr Logo" />
      <span className="self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-light">
       JobTrackr
      </span>
