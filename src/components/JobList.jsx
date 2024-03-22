@@ -16,7 +16,7 @@ function JobList({ jobApplications, setJobApplications }) {
      <h2 className="text-2xl">All Jobs</h2>
     </div>
    )}
-   <div className="flex justify-center m-10">
+   <div className="flex justify-center m-10 h-screen">
     <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
      {jobApplications.map((job, index) => (
       <JobItem
