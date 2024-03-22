@@ -12,7 +12,7 @@ function JobList({ jobApplications, setJobApplications }) {
  return (
   <div>
    {jobApplications.length > 0 && (
-    <div className="flex justify-center text-xl font-bold text-darkblue mt-10">
+    <div className="flex justify-center text-xl font-bold text-darkblue mt-10 dark:text-light">
      <h2 className="text-2xl">All Jobs</h2>
     </div>
    )}
