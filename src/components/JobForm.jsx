@@ -44,11 +44,11 @@ function JobForm({ onAddJob }) {
 
  return (
   <div className="flex justify-center">
-  <form className="w-full max-w-lg" onSubmit={handleSubmit}>
+  <form className="w-full max-w-lg mt-5" onSubmit={handleSubmit}>
    <div className="flex flex-wrap -mx-3 mb-6">
     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
       htmlFor="company"
      >
       Company:
@@ -64,7 +64,7 @@ function JobForm({ onAddJob }) {
 
     <div className="w-full md:w-1/2 px-3">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
       htmlFor="position"
      >
       Position:
@@ -82,7 +82,7 @@ function JobForm({ onAddJob }) {
    <div className="flex flex-wrap -mx-3 mb-2">
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
       htmlFor="date"
      >
       {" "}
@@ -99,7 +99,7 @@ function JobForm({ onAddJob }) {
 
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
       htmlFor="type"
      >
       {" "}
@@ -127,7 +127,7 @@ function JobForm({ onAddJob }) {
 
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
       htmlFor="status"
      >
       {" "}
@@ -156,7 +156,7 @@ function JobForm({ onAddJob }) {
    {!isfill && <Error className="text-danger" />}
    <div className="flex justify-center mt-5">
     <button
-     className="bg-transparent font-semibold text-darkblue border py-2 px-4 border-darkblue hover:bg-darkblue hover:text-light rounded transition ease-in-out delay-150 hover:transition-all"
+     className="bg-transparent font-semibold text-darkblue border py-2 px-4 border-darkblue hover:bg-darkblue hover:text-light rounded transition ease-in-out delay-150 hover:transition-all dark:bg-light dark:hover:bg-darkblue dark:hover:border-light dark:hover:text-light"
      type="submit"
     >
      Add Job

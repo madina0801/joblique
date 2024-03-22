@@ -15,8 +15,9 @@ function Navbar() {
 
  const [darkMode, setDarkMode] = useState(false);
 
- const toggleDarkMode = () => {
+ const darkModeHandler = () => {
   setDarkMode(!darkMode);
+  document.body.classList.toggle("dark");
  };
 
  const content = (
@@ -52,7 +53,7 @@ function Navbar() {
    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <div className="flex items-center space-x-3 rtl:space-x-reverse">
      <img src={logo} className="h-8" alt="JobTrackr Logo" />
-     <span className="self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-white">
+     <span className="self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-light">
       JobTrackr
      </span>
     </div>
@@ -71,19 +72,19 @@ function Navbar() {
      )}
     </button>
     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-     <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+     <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
       <NavLink to="/">
-       <li className="nav-link">Home</li>
+       <li className="nav-link  dark:text-light">Home</li>
       </NavLink>
       <NavLink to="/about">
-       <li className="nav-link">About</li>
+       <li className="nav-link  dark:text-light">About</li>
       </NavLink>
       <NavLink to="https://github.com/madina0801/JobTrackr" target="blank">
-       <li className="nav-link">GitHub</li>
+       <li className="nav-link  dark:text-light">GitHub</li>
       </NavLink>
       <button
        className="h-6 w-10 flex bg-light rounded-lg justify-center items-center"
-       onClick={toggleDarkMode}
+       onClick={darkModeHandler}
       >
        {darkMode ? <MdOutlineLightMode /> : <MdDarkMode />}
       </button>
