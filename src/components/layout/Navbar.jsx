@@ -23,7 +23,7 @@ function Navbar() {
 
  const content = (
   <>
-   <div className="block md:hidden absolute top-16 w-full h-svh left-0 right-0 bg-light/50 dark:bg-darkblue/50 text-darkblue dark:text-light transition z-50 backdrop-blur-sm">
+   <div className="block md:hidden absolute top-16 w-full h-full left-0 right-0 bg-light/70 dark:bg-darkblue/70 text-darkblue dark:text-light transition z-50 backdrop-blur-lg">
     <ul className="text-center text-2xl font-medium p-20">
      <NavLink to="/" onClick={toggleMobileMenu}>
       <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
@@ -61,7 +61,7 @@ function Navbar() {
     <button
      data-collapse-toggle="navbar-default"
      type="button"
-     className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+     className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-light dark:hover:bg-gray-700 dark:focus:ring-gray-600"
      aria-controls="navbar-default"
      aria-expanded="false"
      onClick={toggleMobileMenu}
