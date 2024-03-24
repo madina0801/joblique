@@ -1,7 +1,7 @@
 function About() {
  return (
-  <div className="h-screen flex flex-col items-center text-darkblue dark:text-light">
-   <h2 className="text-xl font-semibold">About</h2>
+  <div className="h-screen flex flex-col items-center text-darkblue bg-light dark:text-light dark:bg-darkblue mt-5">
+   <h2 className="text-xl font-semibold">About JobTrackr</h2>
    <p className="text-md px-20 mt-3 text-justify">
     I wanted to create simple and effective application to keep track of jobs
     I've applied for. And decided to share it with everyone. JobTrackr is an
