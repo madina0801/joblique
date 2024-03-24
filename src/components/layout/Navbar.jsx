@@ -95,7 +95,7 @@ function Navbar() {
      </div>
      <div>
       <button
-       className="h-6 w-10 flex bg-darkgray rounded-lg justify-center items-center"
+       className="h-6 w-10 flex bg-darkgray text-darkblue rounded-lg justify-center items-center"
        onClick={darkModeHandler}
       >
        {darkMode ? <MdOutlineLightMode /> : <MdDarkMode />}
