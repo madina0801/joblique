@@ -26,7 +26,8 @@ function JobItem({ job, idx, setJobApplications }) {
  return (
     <div className="bg-gradient-to-r from-blue-400  via-white to-blue-400 shadow-3xl w-fit
      border-darkblue text-darkblue p-7 rounded-lg shadow-xl
-     shadow-lightblue dark:shadow-md dark:shadow-slate-400 hover:scale-105 transition-transform duration-300">
+     shadow-lightblue dark:shadow-md dark:shadow-slate-400 hover:scale-105 transition-transform duration-300 
+     hover:shadow-xl hover:shadow-green-200 dark:hover:shadow-xl dark:hover:shadow-green-200">
      <div className="flex space-x-7 mb-7">
         <div className="flex items-center text-sm">
          <div>
