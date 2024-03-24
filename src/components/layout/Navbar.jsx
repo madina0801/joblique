@@ -5,7 +5,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 import lightModeLogo from "../../assets/logo-light-mode.svg";
-import darkModeLogo from "../../assets/logo-dark-mode.png";
+import darkModeLogo from "../../assets/logo-dark-mode.svg";
 
 function Navbar() {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
