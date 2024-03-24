@@ -48,13 +48,13 @@ function JobForm({ onAddJob }) {
    <div className="flex flex-wrap -mx-3 mb-6">
     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
       htmlFor="company"
      >
       Company:
      </label>
      <input
-      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+      className="appearance-none block w-full bg-gray-200 text-darkblue border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
       id="company"
       type="text"
       value={company}
@@ -64,13 +64,13 @@ function JobForm({ onAddJob }) {
 
     <div className="w-full md:w-1/2 px-3">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
       htmlFor="position"
      >
       Position:
      </label>
      <input
-      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+      className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       id="position"
       type="text"
       value={position}
@@ -82,14 +82,14 @@ function JobForm({ onAddJob }) {
    <div className="flex flex-wrap -mx-3 mb-2">
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
       htmlFor="date"
      >
       {" "}
       Date Applied:
      </label>
      <input
-      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+      className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight"
       id="date"
       type="date"
       value={dateApplied}
@@ -99,7 +99,7 @@ function JobForm({ onAddJob }) {
 
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
       htmlFor="type"
      >
       {" "}
@@ -107,7 +107,7 @@ function JobForm({ onAddJob }) {
      </label>
      <div className="relative">
       <select
-       className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+       className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
        id="type"
        onChange={(e) => setJobtype(e.target.value)}
       >
@@ -119,7 +119,7 @@ function JobForm({ onAddJob }) {
        <option value="Full Time">Full time</option>
       </select>
 
-      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
        <RiArrowDropDownLine className="fill-current h-5 w-5" />
       </div>
      </div>
@@ -127,7 +127,7 @@ function JobForm({ onAddJob }) {
 
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
      <label
-      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-light"
+      className="block uppercase tracking-wide text-darkblue gray-700 text-xs font-bold mb-2 dark:text-light"
       htmlFor="status"
      >
       {" "}
@@ -135,7 +135,7 @@ function JobForm({ onAddJob }) {
      </label>
      <div className="relative">
       <select
-       className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+       className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
        id="status"
        onChange={(e) => setStatus(e.target.value)}
       >
@@ -147,7 +147,7 @@ function JobForm({ onAddJob }) {
        <option value="Rejected">Rejected</option>
       </select>
 
-      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
        <RiArrowDropDownLine className="fill-current h-5 w-5" />
       </div>
      </div>
