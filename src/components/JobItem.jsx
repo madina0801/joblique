@@ -24,49 +24,52 @@ function JobItem({ job, idx, setJobApplications }) {
  };
 
  return (
-  <div className="bg-light border border-darkblue text-darkblue w-[300px] p-7 rounded-lg shadow-xl shadow-lightblue">
-   <div className="flex space-x-7 mb-7">
-    <div className="flex items-center text-sm">
-     <div>
-      <IoPersonSharp className="w-6 h-6 mr-1" />
+    <div className="bg-gradient-to-r from-blue-400  via-white to-blue-400 shadow-3xl w-fit
+     border-darkblue text-darkblue p-7 rounded-lg shadow-xl
+     shadow-lightblue dark:shadow-md dark:shadow-slate-400 hover:scale-105 transition-transform duration-300">
+     <div className="flex space-x-7 mb-7">
+        <div className="flex items-center text-sm">
+         <div>
+            <IoPersonSharp className="w-6 h-6 mr-1" />
+         </div>
+         <span className="">{job.position}</span>
+        </div>
+
+        <div className="flex items-center text-sm">
+         <div>
+            <FaRegBuilding className="w-6 h-6 mr-1" />
+         </div>
+         <span>{job.company}</span>
+        </div>
+        <div id="delete-btn" className="text-sm">
+         <span onClick={handleDeleteJob}>
+            <IoTrashBin className="h-6 w-6 mr- mt-4" />
+            <span className="inline-block">Delete</span>
+         </span>
+        </div>
      </div>
-     <span className="">{job.position}</span>
-    </div>
 
-    <div className="flex items-center text-sm">
-     <div>
-      <FaRegBuilding className="w-6 h-6 mr-1" />
+     <div className="flex space-x-7 mb-7">
+        <div className="flex items-center text-sm">
+         <IoBriefcase className="w-6 h-6 mr-1" />
+         <span>{job.jobtype}</span>
+        </div>
+
+        <div className="flex items-center text-sm">
+         <IoCalendar className="w-6 h-6 mr-1" />
+         <span>{job.dateApplied}</span>
+        </div>
      </div>
-     <span>{job.company}</span>
-    </div>
-   </div>
 
-   <div className="flex space-x-7 mb-7">
-    <div className="flex items-center text-sm">
-     <IoBriefcase className="w-6 h-6 mr-1" />
-     <span>{job.jobtype}</span>
-    </div>
+     <div className="flex items-center place-content-around">
+        <div id="status" className="text-sm">
+         <FaListCheck className="w-6 h-6 mr-1" />
+         <span>{job.status}</span>
+        </div>
 
-    <div className="flex items-center text-sm">
-     <IoCalendar className="w-6 h-6 mr-1" />
-     <span>{job.dateApplied}</span>
+       
+     </div>
     </div>
-   </div>
-
-   <div className="flex items-center place-content-around">
-    <div id="status" className="text-sm">
-     <FaListCheck className="w-6 h-6 mr-1" />
-     <span>{job.status}</span>
-    </div>
-
-    <div id="delete-btn" className="text-sm">
-     <span onClick={handleDeleteJob}>
-      <IoTrashBin className="h-6 w-6 mr-1" />
-      Delete
-     </span>
-    </div>
-   </div>
-  </div>
  );
 }
 
