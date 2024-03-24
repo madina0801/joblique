@@ -12,6 +12,8 @@ export default {
       'lightblue': '#8D99AE',
       'light': '#EDF2F4',
       'danger': '#D90429',
+      'lightgray': '#F1FAEE',
+      'darkgray': '#ADB5BD',
     },
   },
   plugins: [],
