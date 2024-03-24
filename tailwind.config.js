@@ -6,7 +6,7 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {   /* *** Error was here with the Bracket for extend **** */
     colors: {
       'darkblue': '#2B2D42',
       'mediumblue': '#1B263B',
@@ -17,6 +17,7 @@ export default {
       'darkgray': '#ADB5BD',
     },
   },
+},
   plugins: [],
 }
 

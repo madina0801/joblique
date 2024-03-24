@@ -5,6 +5,8 @@ import {
  IoCalendar,
 } from "react-icons/io5";
 import { FaRegBuilding, FaListCheck } from "react-icons/fa6";
+import "../index.css";
+
 
 function JobItem({ job, idx, setJobApplications }) {
  const handleDeleteJob = () => {
@@ -24,7 +26,9 @@ function JobItem({ job, idx, setJobApplications }) {
  };
 
  return (
-  <div className="bg-light border border-darkblue text-darkblue w-[300px] p-7 rounded-lg shadow-xl shadow-lightblue">
+  <div className="bg-gradient-to-r from-blue-400  via-white to-blue-400 shadow-3xl w-[300px] border-darkblue text-darkblue p-7 rounded-lg shadow-xl
+   shadow-lightblue dark:shadow-md dark:shadow-slate-400">
+
    <div className="flex space-x-7 mb-7">
     <div className="flex items-center text-sm">
      <div>
@@ -32,7 +36,7 @@ function JobItem({ job, idx, setJobApplications }) {
      </div>
      <span className="">{job.position}</span>
     </div>
-
+     
     <div className="flex items-center text-sm">
      <div>
       <FaRegBuilding className="w-6 h-6 mr-1" />
