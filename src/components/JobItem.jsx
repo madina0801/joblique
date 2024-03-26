@@ -1,12 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 import {
  IoTrashBin,
  IoPersonSharp,
  IoBriefcase,
  IoCalendar,
 } from "react-icons/io5";
+
 import { FaRegBuilding, FaListCheck } from "react-icons/fa6";
 
 function JobItem({ job, idx, setJobApplications }) {
+ const { t } = useTranslation();
  const handleDeleteJob = () => {
   const existingApplications =
    JSON.parse(localStorage.getItem("jobApplications")) || [];
@@ -62,7 +66,7 @@ function JobItem({ job, idx, setJobApplications }) {
     <div id="delete-btn" className="text-sm">
      <span onClick={handleDeleteJob}>
       <IoTrashBin className="h-6 w-6 mr-1" />
-      Delete
+      {t('form.deleteButton')}
      </span>
     </div>
    </div>

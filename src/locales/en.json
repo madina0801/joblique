@@ -6,6 +6,7 @@
 		"jobType": "Job Type",
 		"jobStatus": "Status",
 		"jobButton": "Add Job",
+		"deleteButton": "Delete",
 		"select": "Select",
 		"typeInternship": "Internship",
 		"typePart": "Part time",

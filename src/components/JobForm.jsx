@@ -117,9 +117,9 @@ function JobForm({ onAddJob }) {
         <option className="text-sm" value="">
         {t('form.select')}
         </option>
-        <option value="Internship">{t('form.typeInternship')}</option>
-        <option value="Part Time">{t('form.typePart')}</option>
-        <option value="Full Time">{t('form.typeFull')}</option>
+        <option value={t('form.typeInternship')}>{t('form.typeInternship')}</option>
+        <option value={t('form.typePart')}>{t('form.typePart')}</option>
+        <option value={t('form.typeFull')}>{t('form.typeFull')}</option>
        </select>
 
        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
@@ -143,11 +143,11 @@ function JobForm({ onAddJob }) {
         onChange={(e) => setStatus(e.target.value)}
        >
         <option value="">{t('form.select')}</option>
-        <option value="Applied">{t('form.statusApplied')}</option>
-        <option value="Pending">{t('form.statusPending')}</option>
-        <option value="Interviewing">{t('form.statusInterviewing')}</option>
-        <option value="Hired">{t('form.statusHired')}</option>
-        <option value="Rejected">{t('form.statusRejected')}</option>
+        <option value={t('form.statusApplied')}>{t('form.statusApplied')}</option>
+        <option value={t('form.statusPending')}>{t('form.statusPending')}</option>
+        <option value={t('form.statusInterviewing')}>{t('form.statusInterviewing')}</option>
+        <option value={t('form.statusHired')}>{t('form.statusHired')}</option>
+        <option value={t('form.statusRejected')}>{t('form.statusRejected')}</option>
        </select>
 
        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
