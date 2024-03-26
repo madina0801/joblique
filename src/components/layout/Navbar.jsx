@@ -1,6 +1,8 @@
 import { React, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 import { IoMenu, IoClose } from "react-icons/io5";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
@@ -10,6 +12,7 @@ import lightModeLogo from "../../assets/logo-light-mode.svg";
 import darkModeLogo from "../../assets/logo-dark-mode.svg";
 
 function Navbar() {
+ const { t } = useTranslation();
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
  const toggleMobileMenu = () => {
@@ -40,12 +43,12 @@ function Navbar() {
     <ul className="text-center text-2xl font-medium p-20">
      <NavLink to="/" onClick={toggleMobileMenu}>
       <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
-       Home
+       {t('navbar.home')}
       </li>
      </NavLink>
      <NavLink to="/about" onClick={toggleMobileMenu}>
       <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
-       About
+       {t('navbar.about')}
       </li>
      </NavLink>
      <NavLink
@@ -54,7 +57,7 @@ function Navbar() {
       onClick={toggleMobileMenu}
      >
       <li className="hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
-       GitHub
+      {t('navbar.github')}
       </li>
      </NavLink>
     </ul>
@@ -96,13 +99,13 @@ function Navbar() {
      <div className="hidden md:block mr-4">
       <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:text-light">
        <NavLink to="/">
-        <li className="hover:text-lightblue">Home</li>
+        <li className="hover:text-lightblue">{t('navbar.home')}</li>
        </NavLink>
        <NavLink to="/about">
-        <li className="hover:text-lightblue">About</li>
+        <li className="hover:text-lightblue">{t('navbar.about')}</li>
        </NavLink>
        <NavLink to="https://github.com/madina0801/JobTrackr" target="blank">
-        <li className="hover:text-lightblue">GitHub</li>
+        <li className="hover:text-lightblue">{t('navbar.github')}</li>
        </NavLink>
       </ul>
      </div>
