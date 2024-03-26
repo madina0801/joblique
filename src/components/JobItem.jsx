@@ -28,7 +28,9 @@ function JobItem({ job, idx, setJobApplications }) {
  };
 
  return (
-  <div className="bg-light border border-darkblue text-darkblue w-[300px] p-7 rounded-lg shadow-xl shadow-lightblue">
+  <div className="bg-light border border-darkblue text-darkblue w-fit p-7 rounded-lg shadow-xl shadow-lightblue
+     hover:shadow-[#00ff00]">
+        {/* if tailwind was working properly then it would be written like this hover:shadow-green-200 */}
    <div className="flex space-x-7 mb-7">
     <div className="flex items-center text-sm">
      <div>
@@ -43,8 +45,14 @@ function JobItem({ job, idx, setJobApplications }) {
      </div>
      <span>{job.company}</span>
     </div>
-   </div>
-
+   
+   <div id="delete-btn" className="text-sm">
+     <span onClick={handleDeleteJob}>
+      <IoTrashBin className="h-6 w-6 mr-1" />
+      Delete
+     </span>
+    </div>
+    </div>
    <div className="flex space-x-7 mb-7">
     <div className="flex items-center text-sm">
      <div>
