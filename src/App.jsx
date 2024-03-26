@@ -8,10 +8,10 @@ import About from "./components/About";
 import Footer from "./components/layout/Footer";
 
 import "./index.css";
+import "./i18n.js";
 
 function App() {
- const { t, i18n } = useTranslation;
- return (
+  return (
   <div className="overflow-x-hidden min-h-dvh dark:bg-darkblue">
    <Router>
     <Navbar />
@@ -25,10 +25,4 @@ function App() {
  );
 };
 
-export default function WrappedApp() {
-  return (
-    <Suspense fallback="...loading">
-      <App />
-    </Suspense>
-  )
-}
+export default App;

@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
+import LanguageSelector from "../LanguageSelector";
+
 import lightModeLogo from "../../assets/logo-light-mode.svg";
 import darkModeLogo from "../../assets/logo-dark-mode.svg";
 
@@ -19,6 +21,17 @@ function Navbar() {
  const darkModeHandler = () => {
   setDarkMode(!darkMode);
   document.body.classList.toggle("dark");
+ };
+
+ const [showLanguageSelector, setShowLanguageSelector] = useState(false);
+ const [selectedLanguage, setSelectedLanguage] = useState("en");
+ const languages = [
+  { code: "en", name: "English" },
+  { code: "ru", name: "Russian" },
+ ];
+ const handleLanguageSelect = (languageCode) => {
+  setSelectedLanguage(languageCode);
+  setShowLanguageSelector(false);
  };
 
  const content = (
@@ -102,6 +115,10 @@ function Navbar() {
       </button>
      </div>
     </div>
+   </div>
+
+   <div className="text-darkblue">
+    <LanguageSelector />
    </div>
 
    <div>{isMobileMenuOpen && content}</div>

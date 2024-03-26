@@ -1,13 +1,21 @@
-import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import Backend from 'i18next-http-backend';
+import i18n from 'i18next';
+
+// Import language files
+import enTranslation from './locales/en.json';
+import ruTranslation from './locales/ru.json';
+
+// Initialize i18next
 i18n
-  .use(Backend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
+  .use(initReactI18next) // bind react-i18next to i18next
   .init({
-    debug: true,
-    fallbackLng: 'en',
+    resources: {
+      en: { translation: enTranslation },
+      ru: { translation: ruTranslation }
+    },
+    lng: 'en', // default language
+    fallbackLng: 'en', // fallback language if the selected language file is missing
+    interpolation: {
+      escapeValue: false // react already safe from xss
+    }
   });
-export default i18n;
