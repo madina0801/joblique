@@ -6,7 +6,8 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+                    // this should read extend: {
+    extend: {},           
     colors: {
       'darkblue': '#2B2D42',
       'mediumblue': '#1B263B',
@@ -15,8 +16,14 @@ export default {
       'danger': '#D90429',
       'lightgray': '#F1FAEE',
       'darkgray': '#ADB5BD',
+    
+
+
+
     },
   },
+        //  and this line  should have the      {,
+          //  the way it is now dissables all of tailwind color classes
   plugins: [],
 }
 
