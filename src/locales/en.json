@@ -5,7 +5,16 @@
 		"dateApplied": "Date Applied",
 		"jobType": "Job Type",
 		"jobStatus": "Status",
-		"jobButton": "Add Job"
+		"jobButton": "Add Job",
+		"select": "Select",
+		"typeInternship": "Internship",
+		"typePart": "Part time",
+		"typeFull": "Full time",
+		"statusApplied": "Applied",
+		"statusPending": "Pending",
+		"statusInterviewing": "Interviewing",
+		"statusHired": "Hired",
+		"statusRejected": "Rejected"
 	},
 	"jobsTitle": "All Jobs",
 	"navbar": {

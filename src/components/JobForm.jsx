@@ -1,8 +1,9 @@
 // JobForm.js
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import "../index.css";
 import Error from "./Error";
-import { useTranslation } from "react-i18next";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -114,11 +115,11 @@ function JobForm({ onAddJob }) {
         onChange={(e) => setJobtype(e.target.value)}
        >
         <option className="text-sm" value="">
-         Select
+        {t('form.select')}
         </option>
-        <option value="Internship">Internship</option>
-        <option value="Part Time">Part time</option>
-        <option value="Full Time">Full time</option>
+        <option value="Internship">{t('form.typeInternship')}</option>
+        <option value="Part Time">{t('form.typePart')}</option>
+        <option value="Full Time">{t('form.typeFull')}</option>
        </select>
 
        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
@@ -141,12 +142,12 @@ function JobForm({ onAddJob }) {
         id="status"
         onChange={(e) => setStatus(e.target.value)}
        >
-        <option value="">Select</option>
-        <option value="Applied">Applied</option>
-        <option value="Pending">Pending</option>
-        <option value="Interviewing">Interviewing</option>
-        <option value="Hired">Hired</option>
-        <option value="Rejected">Rejected</option>
+        <option value="">{t('form.select')}</option>
+        <option value="Applied">{t('form.statusApplied')}</option>
+        <option value="Pending">{t('form.statusPending')}</option>
+        <option value="Interviewing">{t('form.statusInterviewing')}</option>
+        <option value="Hired">{t('form.statusHired')}</option>
+        <option value="Rejected">{t('form.statusRejected')}</option>
        </select>
 
        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
@@ -161,7 +162,7 @@ function JobForm({ onAddJob }) {
       className="bg-transparent font-semibold text-darkblue border py-2 px-4 border-darkblue hover:bg-darkblue hover:text-light rounded transition ease-in-out delay-150 hover:transition-all dark:bg-light dark:hover:bg-darkblue dark:hover:border-light dark:hover:text-light"
       type="submit"
      >
-      Add Job
+      {t('form.jobButton')}
      </button>
     </div>
    </form>

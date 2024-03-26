@@ -5,9 +5,18 @@
 		"dateApplied": "Дата",
 		"jobType": "Тип занятости",
 		"jobStatus": "Статус",
-		"jobButton": "Добавить отклик"
+		"jobButton": "Добавить отклик",
+		"select": "Выбрать",
+		"typeInternship": "Стажировка",
+		"typePart": "Частичная занятость",
+		"typeFull": "Полная занятость",
+		"statusApplied": "Заявка отправлена",
+		"statusPending": "В обработке",
+		"statusInterviewing": "Прохожу интервью",
+		"statusHired": "Приглашение",
+		"statusRejected": "Отказ"
 	},
-	"jobsTitle": "Отклики",
+	"jobsTitle": "Все Отклики",
 	"navbar": {
 		"home": "Главная",
 		"about": "Обо мне",

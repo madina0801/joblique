@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import JobItem from "./JobItem";
 
 function JobList({ jobApplications, setJobApplications }) {
+ const { t } = useTranslation();
  const [savedJobs, setSavedJobs] = useState([]);
  useEffect(() => {
   const storedJobs = JSON.parse(localStorage.getItem("jobApplications")) || [];
@@ -12,7 +15,7 @@ function JobList({ jobApplications, setJobApplications }) {
   <div className="h-screen">
    {jobApplications.length > 0 && (
     <div className="flex justify-center text-xl font-bold text-darkblue mt-10 dark:text-light">
-     <h2 className="text-2xl">All Jobs</h2>
+     <h2 className="text-2xl">{t("jobsTitle")}</h2>
     </div>
    )}
    <div className="flex justify-center m-10">
