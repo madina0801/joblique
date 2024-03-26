@@ -26,6 +26,6 @@
 	"aboutPage": {
 		"aboutTitle": "About JobTrackr",
 		"aboutDesc": "I wanted to create simple and effective application to keep track of jobs I've applied for. And decided to share it with everyone. JobTrackr is an open-source project. So, everyone can contribute, I review code changes and the contributors can see their changes live. I aim to make this community friendly and inviting",
-		"aboutLine": "Created with love. &#x1F497;"
+		"aboutLine": "Created with love."
 	}
 }

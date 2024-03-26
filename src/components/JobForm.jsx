@@ -8,7 +8,7 @@ import Error from "./Error";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 function JobForm({ onAddJob }) {
- const {t} = useTranslation();
+ const { t } = useTranslation();
  const [isfill, setIsfill] = useState(true);
  const [company, setCompany] = useState("");
  const [position, setPosition] = useState("");
@@ -54,7 +54,7 @@ function JobForm({ onAddJob }) {
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
        htmlFor="company"
       >
-       {t('form.company')}
+       {t("form.company")}
       </label>
       <input
        className="appearance-none block w-full bg-gray-200 text-darkblue border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -70,7 +70,7 @@ function JobForm({ onAddJob }) {
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
        htmlFor="position"
       >
-       {t('form.position')}
+       {t("form.position")}
       </label>
       <input
        className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -89,7 +89,7 @@ function JobForm({ onAddJob }) {
        htmlFor="date"
       >
        {" "}
-       {t('form.dateApplied')}
+       {t("form.dateApplied")}
       </label>
       <input
        className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight"
@@ -106,7 +106,7 @@ function JobForm({ onAddJob }) {
        htmlFor="type"
       >
        {" "}
-       {t('form.jobType')}
+       {t("form.jobType")}
       </label>
       <div className="relative">
        <select
@@ -115,11 +115,13 @@ function JobForm({ onAddJob }) {
         onChange={(e) => setJobtype(e.target.value)}
        >
         <option className="text-sm" value="">
-        {t('form.select')}
+         {t("form.select")}
         </option>
-        <option value={t('form.typeInternship')}>{t('form.typeInternship')}</option>
-        <option value={t('form.typePart')}>{t('form.typePart')}</option>
-        <option value={t('form.typeFull')}>{t('form.typeFull')}</option>
+        <option value={t("form.typeInternship")}>
+         {t("form.typeInternship")}
+        </option>
+        <option value={t("form.typePart")}>{t("form.typePart")}</option>
+        <option value={t("form.typeFull")}>{t("form.typeFull")}</option>
        </select>
 
        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
@@ -134,7 +136,7 @@ function JobForm({ onAddJob }) {
        htmlFor="status"
       >
        {" "}
-       {t('form.jobStatus')}
+       {t("form.jobStatus")}
       </label>
       <div className="relative">
        <select
@@ -142,12 +144,20 @@ function JobForm({ onAddJob }) {
         id="status"
         onChange={(e) => setStatus(e.target.value)}
        >
-        <option value="">{t('form.select')}</option>
-        <option value={t('form.statusApplied')}>{t('form.statusApplied')}</option>
-        <option value={t('form.statusPending')}>{t('form.statusPending')}</option>
-        <option value={t('form.statusInterviewing')}>{t('form.statusInterviewing')}</option>
-        <option value={t('form.statusHired')}>{t('form.statusHired')}</option>
-        <option value={t('form.statusRejected')}>{t('form.statusRejected')}</option>
+        <option value="">{t("form.select")}</option>
+        <option value={t("form.statusApplied")}>
+         {t("form.statusApplied")}
+        </option>
+        <option value={t("form.statusPending")}>
+         {t("form.statusPending")}
+        </option>
+        <option value={t("form.statusInterviewing")}>
+         {t("form.statusInterviewing")}
+        </option>
+        <option value={t("form.statusHired")}>{t("form.statusHired")}</option>
+        <option value={t("form.statusRejected")}>
+         {t("form.statusRejected")}
+        </option>
        </select>
 
        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
@@ -162,7 +172,7 @@ function JobForm({ onAddJob }) {
       className="bg-transparent font-semibold text-darkblue border py-2 px-4 border-darkblue hover:bg-darkblue hover:text-light rounded transition ease-in-out delay-150 hover:transition-all dark:bg-light dark:hover:bg-darkblue dark:hover:border-light dark:hover:text-light"
       type="submit"
      >
-      {t('form.jobButton')}
+      {t("form.jobButton")}
      </button>
     </div>
    </form>

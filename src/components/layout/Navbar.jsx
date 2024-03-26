@@ -26,16 +26,10 @@ function Navbar() {
   document.body.classList.toggle("dark");
  };
 
- const [showLanguageSelector, setShowLanguageSelector] = useState(false);
- const [selectedLanguage, setSelectedLanguage] = useState("en");
  const languages = [
   { code: "en", name: "English" },
   { code: "ru", name: "Russian" },
  ];
- const handleLanguageSelect = (languageCode) => {
-  setSelectedLanguage(languageCode);
-  setShowLanguageSelector(false);
- };
 
  const content = (
   <>
@@ -43,12 +37,12 @@ function Navbar() {
     <ul className="text-center text-2xl font-medium p-20">
      <NavLink to="/" onClick={toggleMobileMenu}>
       <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
-       {t('navbar.home')}
+       {t("navbar.home")}
       </li>
      </NavLink>
      <NavLink to="/about" onClick={toggleMobileMenu}>
       <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
-       {t('navbar.about')}
+       {t("navbar.about")}
       </li>
      </NavLink>
      <NavLink
@@ -57,7 +51,7 @@ function Navbar() {
       onClick={toggleMobileMenu}
      >
       <li className="hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
-      {t('navbar.github')}
+       {t("navbar.github")}
       </li>
      </NavLink>
     </ul>
@@ -99,13 +93,13 @@ function Navbar() {
      <div className="hidden md:block mr-4">
       <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:text-light">
        <NavLink to="/">
-        <li className="hover:text-lightblue">{t('navbar.home')}</li>
+        <li className="hover:text-lightblue">{t("navbar.home")}</li>
        </NavLink>
        <NavLink to="/about">
-        <li className="hover:text-lightblue">{t('navbar.about')}</li>
+        <li className="hover:text-lightblue">{t("navbar.about")}</li>
        </NavLink>
        <NavLink to="https://github.com/madina0801/JobTrackr" target="blank">
-        <li className="hover:text-lightblue">{t('navbar.github')}</li>
+        <li className="hover:text-lightblue">{t("navbar.github")}</li>
        </NavLink>
       </ul>
      </div>
@@ -121,7 +115,7 @@ function Navbar() {
    </div>
 
    <div className="text-darkblue">
-    <LanguageSelector />
+    <LanguageSelector languages={languages} />
    </div>
 
    <div>{isMobileMenuOpen && content}</div>
