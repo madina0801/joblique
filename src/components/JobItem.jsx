@@ -47,7 +47,9 @@ function JobItem({ job, idx, setJobApplications }) {
 
    <div className="flex space-x-7 mb-7">
     <div className="flex items-center text-sm">
-     <IoBriefcase className="w-6 h-6 mr-1" />
+     <div>
+      <IoBriefcase className="w-6 h-6 mr-1" />
+     </div>
      <span>{job.jobtype}</span>
     </div>
 
@@ -66,7 +68,7 @@ function JobItem({ job, idx, setJobApplications }) {
     <div id="delete-btn" className="text-sm">
      <span onClick={handleDeleteJob}>
       <IoTrashBin className="h-6 w-6 mr-1" />
-      {t('form.deleteButton')}
+      {t("form.deleteButton")}
      </span>
     </div>
    </div>
