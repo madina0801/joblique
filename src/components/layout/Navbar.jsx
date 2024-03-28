@@ -26,11 +26,6 @@ function Navbar() {
   document.body.classList.toggle("dark");
  };
 
- const languages = [
-  { code: "en", name: "English" },
-  { code: "ru", name: "Russian" },
- ];
-
  const content = (
   <>
    <div className="block md:hidden absolute top-16 w-full h-full left-0 right-0 bg-light/70 dark:bg-darkblue/70 text-darkblue dark:text-light transition z-50 backdrop-blur-lg">
@@ -61,6 +56,9 @@ function Navbar() {
 
  return (
   <nav className="w-screen bg-lightgray dark:bg-mediumblue">
+   <div className="text-darkblue mx-1 pt-1">
+    <LanguageSelector />
+   </div>
    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <div className="flex items-center space-x-3 rtl:space-x-reverse">
      <img
@@ -112,10 +110,6 @@ function Navbar() {
       </button>
      </div>
     </div>
-   </div>
-
-   <div className="text-darkblue">
-    <LanguageSelector languages={languages} />
    </div>
 
    <div>{isMobileMenuOpen && content}</div>
