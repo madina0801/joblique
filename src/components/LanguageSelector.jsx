@@ -8,6 +8,7 @@ const LanguageSelector = ({ languages, onSelectLanguage }) => {
  const handleLanguageSelect = (languageCode) => {
   i18n.changeLanguage(languageCode);
   setShowOptions(false);
+  localStorage.setItem("lng", languageCode);
  };
 
  return (

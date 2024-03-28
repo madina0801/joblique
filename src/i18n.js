@@ -13,7 +13,7 @@ i18n
       en: { translation: enTranslation },
       ru: { translation: ruTranslation }
     },
-    lng: 'en', // default language
+    lng: localStorage.getItem('lng') || 'en', // default language
     fallbackLng: 'en', // fallback language if the selected language file is missing
     interpolation: {
       escapeValue: false // react already safe from xss
