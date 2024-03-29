@@ -10,7 +10,7 @@ const LanguageSelector = ({ onSelectLanguage }) => {
 
  const languages = [
   { code: "en", name: "English", flagCode: "gb" },
-  { code: "ru", name: "Russian", flagCode: "ru" },
+  { code: "ru", name: "Русский", flagCode: "ru" },
  ];
 
  const handleLanguageSelect = (languageCode) => {
@@ -24,30 +24,35 @@ const LanguageSelector = ({ onSelectLanguage }) => {
  );
 
  return (
-  <div className="relative w-[120px]">
-   <div className="relative shadow-lg">
-    <button
-     className={`px-1 w-full bg-light border border-lightblue cursor-pointer text-left ${showOptions ? "rounded-t" : "rounded"} `}
-     id="openButton"
-     onClick={() => setShowOptions(!showOptions)}
-    >
-     {selectedLang.name}
-     <span className={`ml-5 fi fi-${selectedLang.flagCode}`}></span>
-    </button>
-    {showOptions && (
-     <div className="absolute bg-light">
-      {languages.map((language, inx) => (
-       <button
-        className={`w-full px-1 py-2 shadow-lg border-b border-lightblue hover:bg-gray-100 cursor-pointer text-left z-50 ${inx % 2 === 0 ? 'rounded-r' : 'rounded-l'}`}
-        key={language.code}
-        onClick={() => handleLanguageSelect(language.code)}
-       >
-        {language.name}
-        <span className={`ml-5 fi fi-${language.flagCode}`}></span>
-       </button>
-      ))}
-     </div>
-    )}
+  <div className="relative w-32">
+   <div className="absolute left-12 top-6 md:left-44 md:top-5 lg:left-0 lg:top-0 w-[120px]">
+    <div className="w-fit shadow-lg">
+     <button
+      className={`w-fit bg-light border border-lightblue cursor-pointer text-left ${
+       showOptions ? "rounded-t" : "rounded"
+      } `}
+      id="openButton"
+      onClick={() => setShowOptions(!showOptions)}
+     >
+      <span className={`px-5 fi fi-${selectedLang.flagCode}`}></span>
+     </button>
+     {showOptions && (
+      <div className="absolute bg-light">
+       {languages.map((language, inx) => (
+        <button
+         className={`w-full px-1 py-2 shadow-lg border-b border-lightblue hover:bg-gray-100 cursor-pointer text-left z-50 ${
+          inx % 2 === 0 ? "rounded-r" : "rounded-l"
+         }`}
+         key={language.code}
+         onClick={() => handleLanguageSelect(language.code)}
+        >
+         {language.name}
+         <span className={`ml-5 fi fi-${language.flagCode}`}></span>
+        </button>
+       ))}
+      </div>
+     )}
+    </div>
    </div>
   </div>
  );
