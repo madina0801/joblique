@@ -6,7 +6,6 @@
 		"jobType": "Тип занятости",
 		"jobStatus": "Статус",
 		"jobButton": "Добавить отклик",
-		"deleteButton": "Удалить",
 		"select": "Выбрать",
 		"typeInternship": "Стажировка",
 		"typePart": "Частичная занятость",
@@ -17,6 +16,7 @@
 		"statusHired": "Приглашение",
 		"statusRejected": "Отказ"
 	},
+	"cardDeleteButton": "Удалить",
 	"jobsTitle": "Все Отклики",
 	"navbar": {
 		"home": "Главная",

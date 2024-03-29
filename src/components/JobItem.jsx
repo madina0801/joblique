@@ -29,7 +29,7 @@ function JobItem({ job, idx, setJobApplications }) {
 
  return (
   <div
-   className="w-[300px] bg-light border border-darkblue text-darkblue p-7 rounded-lg shadow-xl shadow-lightblue hover:shadow-[#00ff00]"
+   className="w-[300px] bg-light border border-darkblue text-darkblue p-7 rounded-lg shadow-xl shadow-lightblue hover:shadow-[darkblue]"
   >
    <div className="flex space-x-7 mb-7">
     <div className="flex items-center text-sm">
@@ -70,7 +70,7 @@ function JobItem({ job, idx, setJobApplications }) {
     <div id="delete-btn" className="text-sm">
      <span onClick={handleDeleteJob}>
       <IoTrashBin className="h-6 w-6 mr-1" />
-      {t("form.deleteButton")}
+      {t("cardDeleteButton")}
      </span>
     </div>
    </div>

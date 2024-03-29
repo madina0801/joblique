@@ -6,7 +6,6 @@
 		"jobType": "Job Type",
 		"jobStatus": "Status",
 		"jobButton": "Add Job",
-		"deleteButton": "Delete",
 		"select": "Select",
 		"typeInternship": "Internship",
 		"typePart": "Part time",
@@ -17,6 +16,7 @@
 		"statusHired": "Hired",
 		"statusRejected": "Rejected"
 	},
+	"cardDeleteButton": "Delete",
 	"jobsTitle": "All Jobs",
 	"navbar": {
 		"home": "Home",
