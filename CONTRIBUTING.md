@@ -16,9 +16,9 @@ There are many ways you can contribute, including, but not limited to:
 
 To maintain consistency and uphold project quality, please adhere to the following guidelines:
 
-1. Do not install install extra packages or third-party libraries.
-2. Request to be assigned before working on open issues.
-3. Provide clear explanations when opening new issues.
+1. Do not install extra packages or third-party libraries.
+2. Request to be assigned before working on an open issue.
+3. Provide clear explanations when opening a new issue.
 4. Keep your branch up to date with the main branch.
 5. Be nice and supportive.
 
