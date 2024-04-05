@@ -9,19 +9,19 @@ There are many ways you can contribute, including, but not limited to:
 - Improving documentation (even this guide, like [NalimWeso](https://github.com/NalimWeso)). 🤠
 - Refactoring styles.
 - Writing code.
-- Writing test (in progress).
+- Writing tests.
 - Reporting bugs.
 
 ## ❗️ Rules
 
-To maintain consistency and ensure the quality of the project, please adhere to the following guidelines:
+To maintain consistency and uphold project quality, please adhere to the following guidelines:
 
-1. Do not install additional packages or link third-party libraries.
-2. If you want to work on an open issue, ask to be assigned.
-3. If you want to open an issue, please explain what you'd change and how you'd do it.
-4. Make sure your branch is up to date with the main branch.
+1. Do not install extra packages or third-party libraries.
+2. Request to be assigned before working on an open issue.
+3. Provide clear explanations when opening a new issue.
+4. Keep your branch up to date with the main branch.
 5. Be nice and supportive.
 
 ## 🐱 First Timer?
 
-Please, check out this [guide](https://www.freecodecamp.org/news/git-and-github-workflow-for-open-source/) to get started.
+Check out this [guide](https://www.freecodecamp.org/news/git-and-github-workflow-for-open-source/) to get started.

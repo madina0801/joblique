@@ -1,6 +1,6 @@
 # 💼 [JobTrackr](https://job-trackr-00f2.onrender.com)
 
-**JobTrackr** is a user-friendly and efficient job application tracker designed to streamline your job search process.
+An intuitive and efficient job application tracker designed to streamline your job search process.
 
 ## 📝 Documentation
 
