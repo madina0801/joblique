@@ -25,7 +25,7 @@
 	},
 	"aboutPage": {
 		"aboutTitle": "O JobTrackr",
-		"aboutDesc": "Chciałam stworzyć prostą i skuteczną aplikację do śledzenia pracy, na którą się aplikowałam. I zdecydowałem się ją udostępnić wszystkim. JobTrackr to projekt open-source. Tak więc każdy może wnieść swój wkład. Ja sprawdzam zmiany w kodzie, a współtwórcy mogą widzieć swoje zmiany na żywo. Staram się uczynić tę społeczność przyjazną i otwartą.",
+		"aboutDesc": "Chciałam stworzyć prostą i skuteczną aplikację do śledzenia pracy, na którą się aplikowałam. I zdecydowałem się ją udostępnić wszystkim. JobTrackr to projekt open-source. Tak więc każdy może wnieść swój wkład, ja sprawdzam zmiany w kodzie, a współtwórcy mogą widzieć swoje zmiany na żywo. Mam zamiar uczynić tę społeczność przyjazną i otwartą.",
 		"aboutLine": "Stworzone z miłości."
 	}
 }
