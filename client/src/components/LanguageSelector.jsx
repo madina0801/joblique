@@ -11,6 +11,7 @@ const LanguageSelector = ({ onSelectLanguage }) => {
  const languages = [
   { code: "en", name: "English", flagCode: "gb" },
   { code: "ru", name: "Русский", flagCode: "ru" },
+  { code: "pl", name: "Polski", flagCode: "pl" },
  ];
 
  const handleLanguageSelect = (languageCode) => {
