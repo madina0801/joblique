@@ -16,10 +16,7 @@ export default {
       'danger': '#D90429',
       'lightgray': '#F1FAEE',
       'darkgray': '#ADB5BD',
-    
-
-
-
+      'white': '#FFFCF2'
     },
   },
         //  and this line  should have the      {,
