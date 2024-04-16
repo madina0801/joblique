@@ -21,7 +21,9 @@
 	"navbar": {
 		"home": "Главная",
 		"about": "Обо мне",
-		"github": "ГитХаб"
+		"github": "ГитХаб",
+		"login": "Вход",
+		"signup": "Регистрация"
 	},
 	"aboutPage": {
 		"aboutTitle": "Что такое JobTrackr",

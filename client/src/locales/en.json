@@ -21,7 +21,9 @@
 	"navbar": {
 		"home": "Home",
 		"about": "About",
-		"github": "GitHub"
+		"github": "GitHub",
+		"login": "Log in",
+		"signup": "Sign up"
 	},
 	"aboutPage": {
 		"aboutTitle": "About JobTrackr",

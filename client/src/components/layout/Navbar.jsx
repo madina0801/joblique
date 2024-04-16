@@ -89,7 +89,7 @@ function Navbar() {
 
     <div className="flex items-center">
      <div className="hidden md:block mr-4">
-      <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:text-light">
+      <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:text-light">
        <NavLink to="/">
         <li className="hover:text-lightblue">{t("navbar.home")}</li>
        </NavLink>
@@ -98,6 +98,12 @@ function Navbar() {
        </NavLink>
        <NavLink to="https://github.com/madina0801/JobTrackr" target="blank">
         <li className="hover:text-lightblue">{t("navbar.github")}</li>
+       </NavLink>
+       <NavLink>
+        <li className="hover:text-lightblue">{t("navbar.login")}</li>
+       </NavLink>
+       <NavLink>
+        <li className="hover:text-lightblue">{t("navbar.signup")}</li>
        </NavLink>
       </ul>
      </div>
