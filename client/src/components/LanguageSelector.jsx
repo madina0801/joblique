@@ -25,7 +25,7 @@ const LanguageSelector = ({ onSelectLanguage }) => {
  );
 
  return (
-  <div className="relative w-32">
+  <div className="relative z-50 w-32">
    <div className="absolute left-12 top-6 md:left-44 md:top-5 lg:left-0 lg:top-0 w-[120px]">
     <div className="w-fit shadow-lg">
      <button
