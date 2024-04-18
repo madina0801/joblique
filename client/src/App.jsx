@@ -6,10 +6,10 @@ import JobApp from "./components/JobApp";
 import Navbar from "./components/layout/Navbar";
 import About from "./components/About";
 import Footer from "./components/layout/Footer";
+import Home from "./components/layout/Home.jsx";
 
 import "./index.css";
 import "./i18n.js";
-import JobForm from "./components/JobForm.jsx";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
     <Navbar />
     <Routes>
      <Route path="/about" element={<About />} />
-     <Route path="/form" element={<JobForm />} />
-     <Route exact path="/" element={<JobApp />} />
+     <Route path="/form" element={<JobApp />} />
+     <Route exact path="/" element={<Home />} />
     </Routes>
    </Router>
    <Footer />
