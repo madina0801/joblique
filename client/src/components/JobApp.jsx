@@ -15,7 +15,7 @@ function JobApp() {
   setJobApplications([...jobApplications, newApplication]);
  };
  return (
-  <div className="bg-light dark:bg-darkblue">
+  <div className="bg-lightgray dark:bg-darkblue">
    <JobForm onAddJob={addJobApplication} />
    <JobList
     jobApplications={jobApplications}

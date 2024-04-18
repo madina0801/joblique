@@ -93,6 +93,9 @@ function Navbar() {
        <NavLink to="/">
         <li className="hover:text-lightblue">{t("navbar.home")}</li>
        </NavLink>
+       <NavLink to="/form">
+        <li className="hover:text-lightblue">{t("navbar.form")}</li>
+       </NavLink>
        <NavLink to="/about">
         <li className="hover:text-lightblue">{t("navbar.about")}</li>
        </NavLink>

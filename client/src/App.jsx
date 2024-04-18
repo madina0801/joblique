@@ -9,6 +9,7 @@ import Footer from "./components/layout/Footer";
 
 import "./index.css";
 import "./i18n.js";
+import JobForm from "./components/JobForm.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Navbar />
     <Routes>
      <Route path="/about" element={<About />} />
+     <Route path="/form" element={<JobForm />} />
      <Route exact path="/" element={<JobApp />} />
     </Routes>
    </Router>
