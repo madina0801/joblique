@@ -28,7 +28,7 @@ function Navbar() {
 
  const content = (
   <>
-   <div className="block md:hidden absolute top-16 w-full h-full left-0 right-0 bg-light/70 dark:bg-darkblue/70 text-darkblue dark:text-light transition z-50 backdrop-blur-lg">
+   <div className="block md:hidden absolute top-16 w-full h-full left-0 right-0 dark:bg-darkblue/70 text-darkblue dark:text-light transition z-50 backdrop-blur-lg">
     <ul className="text-center text-2xl font-medium p-20">
      <NavLink to="/" onClick={toggleMobileMenu}>
       <li className="mb-8 hover:text-lightblue transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
@@ -89,7 +89,7 @@ function Navbar() {
 
     <div className="flex items-center">
      <div className="hidden md:block mr-4">
-      <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:text-light">
+      <ul className="font-medium text-darkblue flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:text-light">
        <NavLink to="/">
         <li className="hover:text-lightblue">{t("navbar.home")}</li>
        </NavLink>

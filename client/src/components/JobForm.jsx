@@ -57,7 +57,7 @@ function JobForm({ onAddJob }) {
        {t("form.company")}
       </label>
       <input
-       className="appearance-none block w-full bg-gray-200 text-darkblue border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+       className="appearance-none block w-full bg-gray-200 text-darkblue border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
        id="company"
        type="text"
        value={company}
