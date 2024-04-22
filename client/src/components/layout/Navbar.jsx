@@ -49,6 +49,12 @@ function Navbar() {
        {t("navbar.github")}
       </li>
      </NavLink>
+     <NavLink>
+      <li className="hover:text-lightblue">{t("navbar.login")}</li>
+     </NavLink>
+     <NavLink>
+      <li className="hover:text-lightblue">{t("navbar.signup")}</li>
+     </NavLink>
     </ul>
    </div>
   </>

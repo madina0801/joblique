@@ -20,9 +20,10 @@
 	"jobsTitle": "Все Отклики",
 	"navbar": {
 		"home": "Главная",
-		"about": "Обо мне",
+		"about": "О Нас",
 		"github": "ГитХаб",
 		"login": "Вход",
+		"form": "Мои Отклики",
 		"signup": "Регистрация"
 	},
 	"aboutPage": {
