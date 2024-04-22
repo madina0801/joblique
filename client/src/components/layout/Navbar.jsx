@@ -12,6 +12,7 @@ import lightModeLogo from "../../assets/logo-light-mode.svg";
 import darkModeLogo from "../../assets/logo-dark-mode.svg";
 
 function Navbar() {
+  const navbarLinks = [{name: "Home", path: "/"}]
  const { t } = useTranslation();
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
