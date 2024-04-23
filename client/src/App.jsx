@@ -7,6 +7,8 @@ import Navbar from "./components/layout/Navbar";
 import About from "./components/About";
 import Footer from "./components/layout/Footer";
 import Home from "./components/layout/Home.jsx";
+import LogIn from "./components/LogIn.jsx";
+import SignUp from "./components/SignUp.jsx";
 
 import "./index.css";
 import "./i18n.js";
@@ -19,6 +21,8 @@ function App() {
     <Routes>
      <Route path="/about" element={<About />} />
      <Route path="/form" element={<JobApp />} />
+     <Route path="/login" element={<LogIn />} />
+     <Route path="/signup" element={<SignUp />} />
      <Route exact path="/" element={<Home />} />
     </Routes>
    </Router>
