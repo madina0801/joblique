@@ -44,15 +44,6 @@ function Navbar() {
        {t("navbar.about")}
       </li>
      </NavLink>
-     <NavLink
-      to="https://github.com/madina0801/JobTrackr"
-      target="_blank"
-      onClick={toggleMobileMenu}
-     >
-      <li className="hover:text-lightblue mb-8 transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">
-       {t("navbar.github")}
-      </li>
-     </NavLink>
      <NavLink to="/login" onClick={toggleMobileMenu}>
       <li className="hover:text-lightblue mb-8 transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">{t("navbar.login")}</li>
      </NavLink>
@@ -108,9 +99,6 @@ function Navbar() {
        </NavLink>
        <NavLink to="/about">
         <li className="hover:text-lightblue">{t("navbar.about")}</li>
-       </NavLink>
-       <NavLink to="https://github.com/madina0801/JobTrackr" target="blank">
-        <li className="hover:text-lightblue">{t("navbar.github")}</li>
        </NavLink>
        <NavLink to="/login">
         <li className="hover:text-lightblue">{t("navbar.login")}</li>

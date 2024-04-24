@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { FaGithub } from 'react-icons/fa'; // Import the GitHub icon
 
 function About() {
  const { t } = useTranslation();
@@ -11,6 +12,17 @@ function About() {
     {t("aboutPage.aboutDesc")}
    </p>
    <p className="text-center text-md mt-3">{t("aboutPage.aboutLine")} &#x1F497; </p>
+
+   {/* GitHub Icon Link */}
+   <a
+    href="https://github.com/madina0801/JobTrackr"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center text-lightblue mt-5"
+   >
+    <FaGithub className="mr-2" />
+    {t("githubLink")}
+   </a>
   </div>
  );
 }
