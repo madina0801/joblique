@@ -20,12 +20,12 @@
 	"jobsTitle": "Wszystkie prace",
 	"navbar": {
 		"home": "Strona główna",
-		"about": "O nas",
-		"github": "GitHub"
+		"about": "O nas"
 	},
 	"aboutPage": {
 		"aboutTitle": "O JobTrackr",
 		"aboutDesc": "Chciałam stworzyć prostą i skuteczną aplikację do śledzenia pracy, na którą się aplikowałam. I zdecydowałem się ją udostępnić wszystkim. JobTrackr to projekt open-source. Tak więc każdy może wnieść swój wkład, ja sprawdzam zmiany w kodzie, a współtwórcy mogą widzieć swoje zmiany na żywo. Mam zamiar uczynić tę społeczność przyjazną i otwartą.",
-		"aboutLine": "Stworzone z miłości."
+		"aboutLine": "Stworzone z miłości.",
+		"githubLink": "GitHub"
 	}
 }
