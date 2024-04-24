@@ -1,4 +1,4 @@
-import HomeImage from "../../assets/home-image.jpg";
+import HomeImage from "../../assets/home-image.webp";
 import { useTranslation } from "react-i18next";
 
 function Home() {
