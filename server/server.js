@@ -1,8 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
-const LocalStrategy = require('passport').Strategy;
-const User = require('models/user');
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
+const User = require('./models/user');
 
 require('dotenv').config();
 
