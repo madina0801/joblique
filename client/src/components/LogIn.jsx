@@ -9,7 +9,7 @@ function LogIn() {
       Log in to your account
      </h2>
     </div>
-    <form className="mt-8 space-y-6" action="#" method="POST">
+    <form id="loginForm" className="mt-8 space-y-6" action="#" method="POST">
      <div className="rounded-md shadow-sm -space-y-px">
       <div>
        <label htmlFor="email-address" className="sr-only">
