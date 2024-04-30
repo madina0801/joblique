@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
@@ -5,17 +7,21 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 
-require('dotenv').config();
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = process.env.URI;
 
-const PORT = 3000;
+
+const PORT = 5000;
 
 const app = express();
 
+const corsOptions = {
+  origin: 'http://localhost:5173',
+}
+
 app.use(express.json());
+app.use(cors(corsOptions));
 
-
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.env.URI;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -36,7 +42,6 @@ async function run() {
   }
 }
 run().catch(console.dir);
-
 
 // Set up Passport
 passport.use(new LocalStrategy({
@@ -89,18 +94,11 @@ app.post('/signup', async (req, res) => {
 
 // Authenticate
 
-
 app.get('/api', (req, res) => {
   res.json({ message: 'Hello from the backend!' });
 });
 
-app.use(cors({
-  origin: 'http://localhost:5187',
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
-
-
 app.listen(PORT, () => {
 	console.log(`Listening on ${PORT}`);
 });
+

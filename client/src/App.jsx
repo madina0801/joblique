@@ -1,6 +1,7 @@
+import axios from "axios";
+
 import React, { useEffect, useState, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 import JobApp from "./components/JobApp";
 import Navbar from "./components/layout/Navbar";
@@ -14,7 +15,20 @@ import "./index.css";
 import "./i18n.js";
 
 function App() {
-  return (
+ const [message, setMessage] = useState("");
+
+ useEffect(() => {
+  fetch("http://localhost:5000/api", {
+   mode: "cors",
+  })
+   .then((res) => res.json())
+   .then((data) => {
+    setMessage(data.message);
+    console.log(data.message);
+   });
+ }, []);
+
+ return (
   <div className="overflow-x-hidden min-h-dvh dark:bg-darkblue">
    <Router>
     <Navbar />
@@ -29,6 +43,6 @@ function App() {
    <Footer />
   </div>
  );
-};
+}
 
 export default App;
