@@ -73,7 +73,7 @@ function JobForm({ onAddJob }) {
        {t("form.position")}
       </label>
       <input
-       className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+       className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
        id="position"
        type="text"
        value={position}
@@ -110,7 +110,7 @@ function JobForm({ onAddJob }) {
       </label>
       <div className="relative">
        <select
-        className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white"
         id="type"
         onChange={(e) => setJobtype(e.target.value)}
        >
@@ -140,7 +140,7 @@ function JobForm({ onAddJob }) {
       </label>
       <div className="relative">
        <select
-        className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white"
         id="status"
         onChange={(e) => setStatus(e.target.value)}
        >
