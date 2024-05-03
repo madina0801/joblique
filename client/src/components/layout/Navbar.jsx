@@ -68,7 +68,7 @@ function Navbar() {
       alt="JobTrackr Logo"
      />
      <span className="hidden md:block self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-light">
-      JobTrackr
+      joblique
      </span>
     </div>
     <div className="flex items-center justify-center md:justify-start">
