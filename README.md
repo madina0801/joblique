@@ -1,4 +1,4 @@
-# 💼 [JobTrackr](https://job-trackr-00f2.onrender.com)
+# 💼 [Joblique](https://job-trackr-00f2.onrender.com)
 
 An intuitive and efficient job application tracker designed to streamline your job search process.
 
