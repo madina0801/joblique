@@ -1,5 +1,6 @@
 import HomeImage from "../../assets/home-image.webp";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 function Home() {
  const { t } = useTranslation();
@@ -12,7 +13,7 @@ function Home() {
      {t("homePage.homeDesc")}
     </p>
     <button className="absolute left-2 rounded-lg bg-darkblue text-white font-semibold px-4 py-2">
-     {t("homePage.homeButton")}
+     <NavLink to="/signup">{t("homePage.homeButton")}</NavLink>
     </button>
    </div>
   </div>
