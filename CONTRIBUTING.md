@@ -1,8 +1,8 @@
-# 🤝 Contributing to JobTrackr
+# 🤝 Contributing
 
-Thank you for considering contributing to **JobTrackr**! I appreciate your interest and would like to hear your feedback. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/madina-tussupova/) if you have any ideas or *constructive* critique.
+Thank you for considering contributing to **Joblique**! I appreciate your interest and would like to hear your feedback. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/madina-tussupova/) if you have any ideas or *constructive* critique.
 
-## ✍️ How to Contribute?
+## ✍️ How?
 
 There are many ways you can contribute, including, but not limited to:
 
