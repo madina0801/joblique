@@ -67,9 +67,9 @@ function Navbar() {
       className="h-8"
       alt="JobTrackr Logo"
      />
-     <span className="hidden md:block self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-light">
+     <NavLink to="/" className="hidden md:block self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-light">
       joblique
-     </span>
+     </NavLink>
     </div>
     <div className="flex items-center justify-center md:justify-start">
      <button
