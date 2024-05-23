@@ -12,7 +12,7 @@ import lightModeLogo from "../../assets/logo-light-mode.svg";
 import darkModeLogo from "../../assets/logo-dark-mode.svg";
 
 function Navbar() {
-  const navbarLinks = [{name: "Home", path: "/"}]
+ const navbarLinks = [{name: "Home", path: "/"}]
  const { t } = useTranslation();
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -96,6 +96,9 @@ function Navbar() {
        </NavLink>
        <NavLink to="/form">
         <li className="hover:text-lightblue">{t("navbar.form")}</li>
+       </NavLink>
+       <NavLink to="/alljobs">
+        <li className="hover:text-lightblue">{t("navbar.jobs")}</li>
        </NavLink>
        <NavLink to="/about">
         <li className="hover:text-lightblue">{t("navbar.about")}</li>
