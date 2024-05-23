@@ -21,9 +21,10 @@
 	"navbar": {
 		"home": "Home",
 		"about": "About",
-		"form": "My jobs",
+		"form": "Applied",
 		"login": "Log in",
-		"signup": "Sign up"
+		"signup": "Sign up",
+		"jobs": "All Jobs"
 	},
 	"aboutPage": {
 		"aboutTitle": "About Joblique",
