@@ -1,10 +1,13 @@
 require('dotenv').config();
 
 const express = require('express');
+const fetch = require('node-fetch');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
+
+
 const User = require('./models/user');
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -22,6 +25,24 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 
+app.get('/alljobs', async (req, res) => {
+  const url = 'https://jsearch.p.rapidapi.com/search?query=Python%20developer%20in%20Texas%2C%20USA&page=1&num_pages=1';
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': process.env.JSEARCH_KEY,
+      'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
+    }
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+});
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -99,6 +120,6 @@ app.get('/api', (req, res) => {
 });
 
 app.listen(PORT, () => {
-	console.log(`Listening on ${PORT}`);
+  console.log(`Listening on ${PORT}`);
 });
 
