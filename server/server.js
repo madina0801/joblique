@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const express = require('express');
-const fetch = require('node-fetch');
+const axios = require('axios');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
 const passport = require('passport');
@@ -25,20 +25,25 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 
-app.get('/alljobs', async (req, res) => {
-  const url = 'https://jsearch.p.rapidapi.com/search?query=Python%20developer%20in%20Texas%2C%20USA&page=1&num_pages=1';
+app.get('/api/data', async (req, res) => {
   const options = {
     method: 'GET',
+    url: 'https://job-search-api1.p.rapidapi.com/v1/job-description-search',
+    params: {
+      q: 'software engineer',
+      page: '1',
+      country: 'us',
+      city: 'Seattle'
+    },
     headers: {
-      'X-RapidAPI-Key': process.env.JSEARCH_KEY,
-      'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
+      'x-rapidapi-key': process.env.API_KEY,
+      'x-rapidapi-host': 'job-search-api1.p.rapidapi.com'
     }
   };
-
+  
   try {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    console.log(result);
+    const response = await axios.request(options);
+    res.json(response.data);
   } catch (error) {
     console.error(error);
   }
