@@ -56,7 +56,7 @@ function Navbar() {
  );
 
  return (
-  <nav className="w-screen bg-lightgray dark:bg-mediumblue">
+  <nav className="w-screen">
    <div className="text-darkblue mx-1 pt-1">
     <LanguageSelector />
    </div>
