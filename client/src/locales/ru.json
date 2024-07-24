@@ -33,8 +33,10 @@
 		"githubLink": "ГитХаб"
 	},
 	"homePage": {
-		"homeTitle": "Организуй поиск работы.",
+		"homeTitle": "Ваш Поиск Работы",
+		"homeTitleHighlight": "Организован",
 		"homeDesc": "Ведите учет своих откликов легко. Попробуйте сейчас.",
-		"homeButton": "Начать"
-	}
+		"homeButton": "Начать",
+		"moreButton": "Узнать больше"
+		}
 }
