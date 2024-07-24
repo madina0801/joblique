@@ -1,11 +1,10 @@
-import HomeImage from "../../assets/home-image.webp";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
 function Home() {
  const { t } = useTranslation();
  return (
-  <div className="flex flex-col items-center mt-6 lg:mt-20">
+  <div className="flex flex-col items-center mt-10 lg:mt-20">
    <h1 className="mb-5 text-4xl sm:text-6xl lg:text-7xl text-center text-darkblue tracking-normal dark:text-light">
     {t("homePage.homeTitle")}{" "}
     <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-red-700">
