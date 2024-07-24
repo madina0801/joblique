@@ -33,8 +33,10 @@
 		"githubLink": "GitHub"
 	},
 	"homePage": {
-		"homeTitle": "Your Job Search Organized",
+		"homeTitle": "Your Job Search",
+		"homeTitleHighlight": "Organized",
 		"homeDesc": "Keep track of your job applications easily and effortlessly. Try it now.",
-		"homeButton": "Start Now"
+		"homeButton": "Start Now",
+		"moreButton": "Learn More"
 	}
 }

@@ -30,7 +30,7 @@ function App() {
  }, []);
 
  return (
-  <div className="overflow-x-hidden min-h-dvh dark:bg-darkblue">
+  <div className="overflow-x-hidden min-h-dvh bg-light dark:bg-darkblue">
    <Router>
     <Navbar />
     <Routes>

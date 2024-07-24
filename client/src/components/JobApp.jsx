@@ -18,7 +18,7 @@ function JobApp() {
   setJobApplications([...jobApplications, newApplication]);
  };
  return (
-  <div className="bg-gray-50 dark:bg-darkblue">
+  <div className="dark:bg-darkblue">
    <JobForm onAddJob={addJobApplication} />
    {jobApplications.length > 0 && (
     <div className="flex justify-center text-xl font-bold text-darkblue mt-10 dark:text-light">
