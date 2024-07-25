@@ -29,9 +29,9 @@ function JobForm({ onAddJob }) {
   }
   if (company.length == 0 || position.length == 0 || dateApplied.length == 0)
    return;
-  saveToLocalStorage(newApplication);
-
+  
   onAddJob(newApplication);
+  saveToLocalStorage(newApplication);
 
   setCompany("");
   setPosition("");

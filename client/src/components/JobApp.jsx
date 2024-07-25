@@ -15,7 +15,9 @@ function JobApp() {
  }, []);
 
  const addJobApplication = (newApplication) => {
-  setJobApplications([...jobApplications, newApplication]);
+  const updatedApplications = [...jobApplications, newApplication];
+  setJobApplications(updatedApplications);
+  localStorage.setItem("jobApplication", JSON.stringify(updatedApplications));
  };
  return (
   <div className="dark:bg-darkblue">
@@ -23,6 +25,7 @@ function JobApp() {
    {jobApplications.length > 0 && (
     <div className="flex justify-center text-xl font-bold text-darkblue mt-10 dark:text-light">
      <h2 className="text-2xl">{t("jobsTitle")}</h2>
+     <span>{jobApplications.length}</span>
     </div>
    )}
    <JobList
