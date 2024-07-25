@@ -38,5 +38,21 @@
 		"homeDesc": "Keep track of your job applications easily and effortlessly. Try it now.",
 		"homeButton": "Start Now",
 		"moreButton": "Learn More"
+	},
+	"loginPage": {
+		"loginTitle": "Welcome back to Joblique",
+		"rememberMe": "Remember me",
+		"forgotPassword": "Forgot Password?",
+		"loginButton": "Login",
+		"noAccount": "Don't have an account?",
+		"signupLink": "Create an account",
+		"googleSignButton": "Sign in with Google"
+	},
+	"signupPage": {
+		"signupTitle": "Welcome to Joblique",
+		"signupButton": "Create an account",
+		"haveAccount": "Already have an account?",
+		"loginLink": "Log in",
+		"googleSignButton": "Sign up with Google"
 	}
 }

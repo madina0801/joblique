@@ -1,42 +1,58 @@
 {
-	"form": {
-		"company": "Компания",
-		"position": "Позиция",
-		"dateApplied": "Дата",
-		"jobType": "Тип занятости",
-		"jobStatus": "Статус",
-		"jobButton": "Добавить отклик",
-		"select": "Выбрать",
-		"typeInternship": "Стажировка",
-		"typePart": "Частичная занятость",
-		"typeFull": "Полная занятость",
-		"statusApplied": "Заявка отправлена",
-		"statusPending": "В обработке",
-		"statusInterviewing": "Прохожу интервью",
-		"statusHired": "Приглашение",
-		"statusRejected": "Отказ"
-	},
-	"cardDeleteButton": "Удалить",
-	"jobsTitle": "Все Отклики",
-	"navbar": {
-		"home": "Главная",
-		"about": "О Нас",
-		"login": "Вход",
-		"form": "Мои Отклики",
-		"signup": "Регистрация",
-		"jobs": "Все вакансии"
-	},
-	"aboutPage": {
-		"aboutTitle": "О Joblique",
-		"aboutDesc": "Я хотела создать простое и эффективное приложение для отслеживания вакансий, на которые я откликнулась. И решила поделиться им со всеми. Joblique - это проект с открытым исходным кодом. Так что каждый может внести свой вклад, я проверяю изменения в коде, и участники могут видеть то, что они создали. Моя цель - сделать это сообщество дружелюбным и приветливым.",
-		"aboutLine": "Создано с любовью.",
-		"githubLink": "ГитХаб"
-	},
-	"homePage": {
-		"homeTitle": "Ваш Поиск Работы",
-		"homeTitleHighlight": "Организован",
-		"homeDesc": "Ведите учет своих откликов легко. Попробуйте сейчас.",
-		"homeButton": "Начать",
-		"moreButton": "Узнать больше"
-		}
+ "form": {
+  "company": "Компания",
+  "position": "Позиция",
+  "dateApplied": "Дата",
+  "jobType": "Тип занятости",
+  "jobStatus": "Статус",
+  "jobButton": "Добавить отклик",
+  "select": "Выбрать",
+  "typeInternship": "Стажировка",
+  "typePart": "Частичная занятость",
+  "typeFull": "Полная занятость",
+  "statusApplied": "Заявка отправлена",
+  "statusPending": "В обработке",
+  "statusInterviewing": "Прохожу интервью",
+  "statusHired": "Приглашение",
+  "statusRejected": "Отказ"
+ },
+ "cardDeleteButton": "Удалить",
+ "jobsTitle": "Все Отклики",
+ "navbar": {
+  "home": "Главная",
+  "about": "О Нас",
+  "login": "Вход",
+  "form": "Мои Отклики",
+  "signup": "Регистрация",
+  "jobs": "Все вакансии"
+ },
+ "aboutPage": {
+  "aboutTitle": "О Joblique",
+  "aboutDesc": "Я хотела создать простое и эффективное приложение для отслеживания вакансий, на которые я откликнулась. И решила поделиться им со всеми. Joblique - это проект с открытым исходным кодом. Так что каждый может внести свой вклад, я проверяю изменения в коде, и участники могут видеть то, что они создали. Моя цель - сделать это сообщество дружелюбным и приветливым.",
+  "aboutLine": "Создано с любовью.",
+  "githubLink": "ГитХаб"
+ },
+ "homePage": {
+  "homeTitle": "Ваш Поиск Работы",
+  "homeTitleHighlight": "Организован",
+  "homeDesc": "Ведите учет своих откликов легко. Попробуйте сейчас.",
+  "homeButton": "Начать",
+  "moreButton": "Узнать больше"
+ },
+ "loginPage": {
+  "loginTitle": "Добро пожаловать в Joblique",
+  "rememberMe": "Запомнить меня",
+  "forgotPassword": "Забыли пароль?",
+  "loginButton": "Войти",
+  "noAccount": "Нет аккаунта?",
+  "signupLink": "Создать аккаунт",
+  "googleSignButton": "Войти с Google"
+ },
+ "signupPage": {
+  "signupTitle": "Добро пожаловать в Joblique",
+  "signupButton": "Создать аккаунт",
+  "haveAccount": "Уже есть аккаунт?",
+  "loginLink": "Войти",
+  "googleSignButton": "Войти с Google"
+ }
 }
