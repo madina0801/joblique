@@ -44,15 +44,19 @@
 		"rememberMe": "Remember me",
 		"forgotPassword": "Forgot Password?",
 		"loginButton": "Login",
-		"noAccount": "Don't have an account?",
+		"noAccount": "Don't have an account? ",
 		"signupLink": "Create an account",
-		"googleSignButton": "Sign in with Google"
+		"googleSignButton": "Sign in with Google",
+		"formEmail": "Email",
+		"formPassword": "Password"
 	},
 	"signupPage": {
 		"signupTitle": "Welcome to Joblique",
 		"signupButton": "Create an account",
-		"haveAccount": "Already have an account?",
+		"haveAccount": "Already have an account? ",
 		"loginLink": "Log in",
-		"googleSignButton": "Sign up with Google"
+		"googleSignButton": "Sign up with Google",
+		"formEmail": "Email",
+		"formPassword": "Password"
 	}
 }
