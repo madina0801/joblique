@@ -12,9 +12,7 @@ function JobList({ jobApplications, setJobApplications }) {
  }, []);
 
  return (
-  <div className="h-screen dark:bg-darkblue">
-   <div className="flex justify-center m-10">
-    <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="m-10 items-center flex flex-col gap-3">
      {jobApplications.map((job, index) => (
       <JobItem
        key={index}
@@ -24,8 +22,6 @@ function JobList({ jobApplications, setJobApplications }) {
       />
      ))}
     </div>
-   </div>
-  </div>
  );
 }
 

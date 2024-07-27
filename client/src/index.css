@@ -45,42 +45,6 @@ h1 {
   transition: all 0.5 ease-in-out;
 }
 
-/* jobIem-Container CSS */
-.jobcontainer {
-  display: grid;
-  gap: 2.5em;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-
-#status {
-  justify-content: center;
-}
-
-#delete-btn {
-  cursor: pointer;
-}
-
-#delete-btn:hover {
-  color: red;
-  transition: 0.3s;
-}
-
-#delete-btn svg {
-  color: red;
-  margin-right: 0.2rem;
-}
-
-.jobitem-icon {
-  height: 1.2em;
-  width: 1.2em;
-}
-
-.jobcontainer-grid {
-  margin-top: 5em;
-  width: 80%;
-}
-
 /* Error css */
 .error {
   color: red;
