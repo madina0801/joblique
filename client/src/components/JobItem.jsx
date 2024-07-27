@@ -30,33 +30,33 @@ function JobItem({ job, idx, setJobApplications }) {
 
  return (
   <div
-   className="w-full relative flex border rounded-lg bg-light  border-darkblue text-darkblue p-7 shadow-xl shadow-lightblue hover:shadow-[darkblue]"
+   className="w-full relative flex md:flex-row min-[320px]:flex-col gap-3 border rounded-lg bg-light  border-darkblue text-darkblue p-7 shadow-xl shadow-lightblue hover:shadow-[darkblue]"
   >
-     <div>
-      <IoPersonSharp className="w-6 h-6 mr-1" />
+     <div className="flex gap-1">
+      <IoPersonSharp className="w-5 h-5 mr-1" />
+      <span className="">{job.position}</span>
      </div>
-     <span className="">{job.position}</span>
 
 
-     <div>
-      <FaRegBuilding className="w-6 h-6 mr-1" />
+     <div className="flex gap-1">
+      <FaRegBuilding className="w-5 h-5 mr-1" />
+      <span>{job.company}</span>
      </div>
-     <span>{job.company}</span>
 
 
-     <div>
-      <IoBriefcase className="w-6 h-6 mr-1" />
+     <div className="flex gap-1">
+      <IoBriefcase className="w-5 h-5 mr-1" />
+      <span>{job.jobtype}</span>
      </div>
-     <span>{job.jobtype}</span>
 
-    <div className="flex items-center text-sm">
-     <IoCalendar className="w-6 h-6 mr-1" />
+    <div className="flex gap-1">
+     <IoCalendar className="w-5 h-5 mr-1" />
      <span>{job.dateApplied}</span>
     </div>
 
 
-    <div id="status" className="text-sm">
-     <FaListCheck className="w-6 h-6 mr-1" />
+    <div className="flex gap-1">
+     <FaListCheck className="w-5 h-5 mr-1" />
      <span>{job.status}</span>
     </div>
 
@@ -65,6 +65,7 @@ function JobItem({ job, idx, setJobApplications }) {
       <RxCross2 className="h-6 w-6 mr-1" />
      </span>
     </div>
+
   </div>
  );
 }

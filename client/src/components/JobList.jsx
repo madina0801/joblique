@@ -12,7 +12,7 @@ function JobList({ jobApplications, setJobApplications }) {
  }, []);
 
  return (
-    <div className="m-10 items-center flex flex-col gap-3">
+    <div className="lg:mx-20 mx-10 mt-7 mb-40 items-center flex flex-col gap-3">
      {jobApplications.map((job, index) => (
       <JobItem
        key={index}
