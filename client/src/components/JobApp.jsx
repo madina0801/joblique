@@ -25,7 +25,7 @@ function JobApp() {
    {jobApplications.length > 0 && (
     <div className="flex justify-center text-xl font-bold text-darkblue mt-10 dark:text-light">
      <h2 className="text-2xl">{t("jobsTitle")}</h2>
-     <span>{jobApplications.length}</span>
+     <span className="text-sm text-slate-600">{jobApplications.length}</span>
     </div>
    )}
    <JobList

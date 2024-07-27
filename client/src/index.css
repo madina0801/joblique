@@ -41,9 +41,6 @@ h1 {
   font-size: 1.5em;
 }
 
-.nav-mobile {
-  transition: all 0.5 ease-in-out;
-}
 
 /* Error css */
 .error {
