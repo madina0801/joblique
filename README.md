@@ -20,7 +20,16 @@ The documentation is segmented into these sections:
 
 ## ✨ Features
 
-- **Job Application Management:** Input and manage the details of the jobs you've applied to, like including company name, job title or application status.
+- **Job Application Management:** Input and manage the details of the jobs you've applied to, like including company name, job title or application status. <br />
+**Plans** <br />
+- [X] Parse jobs from Remotive RSS feed
+- [X] Change homepage styling
+- [ ] Improve form design
+- [ ] Add Edit feature to the JobItem card
+- [ ] Create JobPosting component and render it in JobPostings list
+- [ ] Implement login and signup logic
+      
+      
 
 ## 🛠️ Installation
 
