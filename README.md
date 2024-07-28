@@ -21,7 +21,7 @@ The documentation is segmented into these sections:
 ## ✨ Features
 
 - **Job Application Management:** Input and manage the details of the jobs you've applied to, like including company name, job title or application status. <br />
-**Plans** <br />
+- **Features I Plan to Add** <br />
 - [X] Parse jobs from Remotive RSS feed
 - [X] Change homepage styling
 - [ ] Improve form design
