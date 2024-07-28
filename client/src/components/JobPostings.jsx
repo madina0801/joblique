@@ -21,6 +21,7 @@ function JobPostings() {
 
  return (
   <div>
+    <h1>Jobs are from <a target="_blank" href="https://remotive.com/">Remotive</a></h1>
    <ul className="text-darkblue">
     {jobPostings.map((posting, index) => (
      <li key={index}>
