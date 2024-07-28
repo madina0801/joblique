@@ -10,7 +10,7 @@ import Footer from "./components/layout/Footer";
 import Home from "./components/layout/Home.jsx";
 import LogIn from "./components/LogIn.jsx";
 import SignUp from "./components/SignUp.jsx";
-import AllJobs from "./components/AllJobs.jsx";
+import JobPostings from "./components/JobPostings.jsx";
 
 import "./index.css";
 import "./i18n.js";
@@ -38,7 +38,7 @@ function App() {
      <Route path="/form" element={<JobApp />} />
      <Route path="/login" element={<LogIn />} />
      <Route path="/signup" element={<SignUp />} />
-     <Route path="/alljobs" element={<AllJobs />} />
+     <Route path="/jobpostings" element={<JobPostings />} />
      <Route exact path="/" element={<Home />} />
     </Routes>
    </Router>

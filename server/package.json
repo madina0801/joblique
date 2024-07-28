@@ -20,6 +20,7 @@
     "mongoose": "^8.3.0",
     "nodemon": "^3.1.0",
     "passport": "^0.7.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "rss-parser": "^3.13.0"
   }
 }

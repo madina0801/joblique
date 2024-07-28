@@ -65,7 +65,7 @@ function Navbar() {
      <img
       src={darkMode ? darkModeLogo : lightModeLogo}
       className="h-8"
-      alt="JobTrackr Logo"
+      alt="Joblique Logo"
      />
      <NavLink to="/" className="hidden md:block self-center text-2xl text-darkblue font-semibold whitespace-nowrap dark:text-light">
       joblique
@@ -97,7 +97,7 @@ function Navbar() {
        <NavLink to="/form">
         <li className="hover:text-lightblue">{t("navbar.form")}</li>
        </NavLink>
-       <NavLink to="/alljobs">
+       <NavLink to="/jobpostings">
         <li className="hover:text-lightblue">{t("navbar.jobs")}</li>
        </NavLink>
        <NavLink to="/about">
