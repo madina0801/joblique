@@ -20,7 +20,7 @@ const PORT = 5000;
 const app = express();
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://joblique.onrender.com/'],
+  origin: ['http://localhost:5173', 'https://joblique.onrender.com'],
 }
 
 app.use(express.json());
