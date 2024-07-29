@@ -39,6 +39,7 @@ app.get('/api/remotive-rss', async (req, res) => {
     const feed = await parser.parseURL('https://remotive.com/remote-jobs/feed');
     const jobPostings = feed.items.map(item => ({
       companyName: item.creator,
+      pubDate: item.pubDate.slice(0,16),
       jobLink: item.link,
       jobTitle: item.title,
       contentSnippet: item.contentSnippet.split("\n")[0],
