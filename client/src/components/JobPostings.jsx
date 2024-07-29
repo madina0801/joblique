@@ -9,7 +9,7 @@ function JobPostings() {
  useEffect(() => {
   const fetchJobs = async () => {
    axios
-    .get("http://localhost:5000/api/remotive-rss")
+    .get("https://joblique-server.onrender.com/api/remotive-rss")
     .then((res) => {
      setJobPostings(res.data);
     })
