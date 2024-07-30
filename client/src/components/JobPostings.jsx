@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import JobPosting from "./JobPosting";
+import "dotenv/config";
+require("dotenv").config();
 
 function JobPostings() {
  const [jobPostings, setJobPostings] = useState([]);
@@ -9,7 +11,7 @@ function JobPostings() {
  useEffect(() => {
   const fetchJobs = async () => {
    axios
-    .get("https://joblique-server.onrender.com/api/remotive-rss")
+    .get(process.env.RSS_FEED)
     .then((res) => {
      setJobPostings(res.data);
     })
