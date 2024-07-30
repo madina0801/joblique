@@ -35,20 +35,30 @@ app.listen(PORT, () => {
 });
 
 app.get('/api/remotive-rss', async (req, res) => {
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
+  const startIndex = (page - 1) * limit;
+  const endIndex = startIndex + limit;
   try {
     const feed = await parser.parseURL('https://remotive.com/remote-jobs/feed');
     const jobPostings = feed.items.map(item => ({
       companyName: item.creator,
-      pubDate: item.pubDate.slice(0,16),
+      pubDate: item.pubDate.slice(0, 16),
       jobLink: item.link,
       jobTitle: item.title,
       contentSnippet: item.contentSnippet.split("\n")[0],
     }));
-    res.json(jobPostings);
+    const paginatedJobPostings = jobPostings.slice(startIndex, endIndex);
+    res.json({
+      page,
+      limit,
+      total: jobPostings.length,
+      jobPostings: paginatedJobPostings
+    });
   }
   catch (err) {
     console.error(err);
-  }
+  };
 })
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
