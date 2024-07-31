@@ -49,7 +49,7 @@ function JobForm({ onAddJob }) {
   <div className="flex justify-center">
    <form className="w-full max-w-lg mt-5" onSubmit={handleSubmit}>
     <div className="flex flex-wrap -mx-3 mb-6">
-     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+     <div className="w-full md:w-1/2 pr-2 mb-6 md:mb-0">
       <label
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
        htmlFor="company"
@@ -57,15 +57,16 @@ function JobForm({ onAddJob }) {
        {t("form.company")}
       </label>
       <input
-       className="appearance-none block w-full bg-gray-200 text-darkblue border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+       className="appearance-none block w-full bg-gray text-darkblue border rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
        id="company"
        type="text"
        value={company}
+       placeholder="Company Name"
        onChange={(e) => setCompany(e.target.value)}
       />
      </div>
 
-     <div className="w-full md:w-1/2 px-3">
+     <div className="w-full md:w-1/2">
       <label
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
        htmlFor="position"
@@ -73,16 +74,17 @@ function JobForm({ onAddJob }) {
        {t("form.position")}
       </label>
       <input
-       className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+       className="appearance-none block w-full bg-gray text-darkblue border border-gray-200 rounded-md py-3 px-4 leading-tight focus:outline-none focus:bg-white"
        id="position"
        type="text"
        value={position}
+       placeholder="Job Position"
        onChange={(e) => setPosition(e.target.value)}
       />
      </div>
     </div>
 
-    <div className="flex flex-wrap -mx-3 mb-2">
+    <div className="flex flex-wrap -mx-5 mb-2">
      <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
       <label
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
@@ -92,7 +94,7 @@ function JobForm({ onAddJob }) {
        {t("form.dateApplied")}
       </label>
       <input
-       className="appearance-none block w-full bg-gray-200 text-darkblue border border-gray-200 rounded py-3 px-4 leading-tight"
+       className="appearance-none block w-full bg-gray text-darkblue border border-gray-200 rounded-md py-3 px-4 leading-tight"
        id="date"
        type="date"
        value={dateApplied}
@@ -100,7 +102,7 @@ function JobForm({ onAddJob }) {
       />
      </div>
 
-     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+     <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
       <label
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
        htmlFor="type"
@@ -110,7 +112,7 @@ function JobForm({ onAddJob }) {
       </label>
       <div className="relative">
        <select
-        className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white"
+        className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
         id="type"
         onChange={(e) => setJobtype(e.target.value)}
        >
@@ -130,7 +132,7 @@ function JobForm({ onAddJob }) {
       </div>
      </div>
 
-     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+     <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
       <label
        className="block uppercase tracking-wide text-darkblue gray-700 text-xs font-bold mb-2 dark:text-light"
        htmlFor="status"
@@ -140,7 +142,7 @@ function JobForm({ onAddJob }) {
       </label>
       <div className="relative">
        <select
-        className="block appearance-none w-full bg-gray-200 border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white"
+        className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
         id="status"
         onChange={(e) => setStatus(e.target.value)}
        >
