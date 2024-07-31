@@ -2,10 +2,13 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 import "../index.css";
 import Error from "./Error";
 
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropDownLine, RiCalendar2Fill } from "react-icons/ri";
 
 function JobForm({ onAddJob }) {
  const { t } = useTranslation();
@@ -15,6 +18,8 @@ function JobForm({ onAddJob }) {
  const [dateApplied, setDateApplied] = useState("");
  const [jobtype, setJobtype] = useState("");
  const [status, setStatus] = useState("");
+
+ const [startDate, setStartDate] = useState(new Date());
 
  const handleSubmit = (e) => {
   e.preventDefault();
@@ -29,7 +34,7 @@ function JobForm({ onAddJob }) {
   }
   if (company.length == 0 || position.length == 0 || dateApplied.length == 0)
    return;
-  
+
   onAddJob(newApplication);
   saveToLocalStorage(newApplication);
 
@@ -84,8 +89,8 @@ function JobForm({ onAddJob }) {
      </div>
     </div>
 
-    <div className="flex flex-wrap -mx-5 mb-2">
-     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+    <div className="flex flex-wrap -mx-3 mb-2">
+     <div className="w-full md:w-1/3 mb-6 md:mb-0">
       <label
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
        htmlFor="date"
@@ -93,13 +98,26 @@ function JobForm({ onAddJob }) {
        {" "}
        {t("form.dateApplied")}
       </label>
-      <input
+
+      <DatePicker
+       showIcon
+       className="rounded-md "
+       toggleCalendarOnIconClick
+       icon={<RiCalendar2Fill />}
+       onChange={(date) => {
+        setDateApplied(JSON.stringify(date).slice(1, 11));
+        setStartDate(date);
+       }}
+      />
+
+      {/* <input
        className="appearance-none block w-full bg-gray text-darkblue border border-gray-200 rounded-md py-3 px-4 leading-tight"
        id="date"
        type="date"
        value={dateApplied}
-       onChange={(e) => setDateApplied(e.target.value)}
-      />
+       onChange={(e) => console.log(e.target.value)}
+      //  onChange={(e) => setDateApplied(e.target.value)}
+      /> */}
      </div>
 
      <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
