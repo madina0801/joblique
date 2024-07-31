@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import JobPosting from "./JobPosting";
 import { useInView } from "react-intersection-observer";
+import Spinner from "./layout/Spinner";
 
 function JobPostings() {
  const [jobPostings, setJobPostings] = useState([]);
@@ -15,7 +16,7 @@ function JobPostings() {
   setLoading(true);
   try {
    const res = await axios.get(import.meta.env.VITE_RSS_FEED, {
-    params: { page: numPage, limit: 10 },
+    params: { page: numPage, limit: 5 },
    });
    setJobPostings((prevJobs) => [...prevJobs, ...res.data.jobPostings]);
    setTotal(res.data.total);
@@ -54,7 +55,7 @@ function JobPostings() {
     ))}
    </ul>
    <div ref={ref}></div>
-   {loading && <p className="text-center">Loading more jobs...</p>}
+   {loading && <Spinner text="Loading" />}
   </div>
  );
 }

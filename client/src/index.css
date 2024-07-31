@@ -21,18 +21,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-bottom: 1.5em;
-}
-
 /* Navbar */
 .nav-mobile ul {
   border: none;
@@ -48,10 +36,16 @@ h1 {
   margin: auto;
 }
 
-.footer-container {
-  margin-top: auto;
-  background-color: black;
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
+#spinner {
+  animation: spin-animation 0.5s infinite;
+  display: inline-block;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
