@@ -91,7 +91,7 @@ function JobForm({ onAddJob }) {
      />
     </div>
 
-    <div className="w-full">
+    <div>
      <label
       className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
       htmlFor="date"
@@ -99,10 +99,10 @@ function JobForm({ onAddJob }) {
       {" "}
       {t("form.dateApplied")}
      </label>
-
+    <div className="">
      <DatePicker
       id="date"
-      className="px-5 text-slate-900 rounded-md focus:outline-none focus:border focus:border-gray-600"
+      className="w-full px-5 text-slate-900 rounded-md focus:outline-none focus:border focus:border-gray-600"
       showIcon
       toggleCalendarOnIconClick
       selected={selectedDate}
@@ -111,6 +111,7 @@ function JobForm({ onAddJob }) {
        setSelectedDate(date);
       }}
      />
+    </div>
     </div>
 
     <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">

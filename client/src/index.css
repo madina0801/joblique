@@ -29,6 +29,11 @@
   font-size: 1.5em;
 }
 
+/* Datepicker */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
 
 /* Error css */
 .error {
