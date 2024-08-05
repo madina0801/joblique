@@ -20,6 +20,7 @@ function JobForm({ onAddJob }) {
  const [status, setStatus] = useState("");
 
  const [startDate, setStartDate] = useState(new Date());
+ const [selectedDate, setSelectedDate] = useState(new Date());
 
  const handleSubmit = (e) => {
   e.preventDefault();
@@ -52,140 +53,131 @@ function JobForm({ onAddJob }) {
 
  return (
   <div className="flex justify-center">
-   <form className="w-full max-w-lg mt-5" onSubmit={handleSubmit}>
-    <div className="flex flex-wrap -mx-3 mb-6">
-     <div className="w-full md:w-1/2 pr-2 mb-6 md:mb-0">
-      <label
-       className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
-       htmlFor="company"
-      >
-       {t("form.company")}
-      </label>
-      <input
-       className="appearance-none block w-full bg-gray text-darkblue border rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-       id="company"
-       type="text"
-       value={company}
-       placeholder="Company Name"
-       onChange={(e) => setCompany(e.target.value)}
-      />
-     </div>
-
-     <div className="w-full md:w-1/2">
-      <label
-       className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
-       htmlFor="position"
-      >
-       {t("form.position")}
-      </label>
-      <input
-       className="appearance-none block w-full bg-gray text-darkblue border border-gray-200 rounded-md py-3 px-4 leading-tight focus:outline-none focus:bg-white"
-       id="position"
-       type="text"
-       value={position}
-       placeholder="Job Position"
-       onChange={(e) => setPosition(e.target.value)}
-      />
-     </div>
+   <form
+    className="flex flex-col gap-3 w-full max-w-lg mt-5"
+    onSubmit={handleSubmit}
+   >
+    <div>
+     <label
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
+      htmlFor="company"
+     >
+      {t("form.company")}
+     </label>
+     <input
+      className="appearance-none block w-full bg-gray text-darkblue border rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+      id="company"
+      type="text"
+      value={company}
+      placeholder="Company Name"
+      onChange={(e) => setCompany(e.target.value)}
+     />
     </div>
 
-    <div className="flex flex-wrap -mx-3 mb-2">
-     <div className="w-full md:w-1/3 mb-6 md:mb-0">
-      <label
-       className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
-       htmlFor="date"
+    <div>
+     <label
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
+      htmlFor="position"
+     >
+      {t("form.position")}
+     </label>
+     <input
+      className="appearance-none block w-full bg-gray text-darkblue border border-gray-200 rounded-md py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+      id="position"
+      type="text"
+      value={position}
+      placeholder="Job Position"
+      onChange={(e) => setPosition(e.target.value)}
+     />
+    </div>
+
+    <div className="w-full">
+     <label
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
+      htmlFor="date"
+     >
+      {" "}
+      {t("form.dateApplied")}
+     </label>
+
+     <DatePicker
+      id="date"
+      className="px-5 text-slate-900 rounded-md focus:outline-none focus:border focus:border-gray-600"
+      showIcon
+      toggleCalendarOnIconClick
+      selected={selectedDate}
+      onChange={(date) => {
+       setDateApplied(JSON.stringify(date).slice(1, 11));
+       setSelectedDate(date);
+      }}
+     />
+    </div>
+
+    <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
+     <label
+      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
+      htmlFor="type"
+     >
+      {" "}
+      {t("form.jobType")}
+     </label>
+     <div className="relative">
+      <select
+       className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
+       id="type"
+       onChange={(e) => setJobtype(e.target.value)}
       >
-       {" "}
-       {t("form.dateApplied")}
-      </label>
+       <option className="text-sm" value="">
+        {t("form.select")}
+       </option>
+       <option value={t("form.typeInternship")}>
+        {t("form.typeInternship")}
+       </option>
+       <option value={t("form.typePart")}>{t("form.typePart")}</option>
+       <option value={t("form.typeFull")}>{t("form.typeFull")}</option>
+      </select>
 
-      <DatePicker
-       showIcon
-       className="rounded-md "
-       toggleCalendarOnIconClick
-       icon={<RiCalendar2Fill />}
-       onChange={(date) => {
-        setDateApplied(JSON.stringify(date).slice(1, 11));
-        setStartDate(date);
-       }}
-      />
-
-      {/* <input
-       className="appearance-none block w-full bg-gray text-darkblue border border-gray-200 rounded-md py-3 px-4 leading-tight"
-       id="date"
-       type="date"
-       value={dateApplied}
-       onChange={(e) => console.log(e.target.value)}
-      //  onChange={(e) => setDateApplied(e.target.value)}
-      /> */}
-     </div>
-
-     <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
-      <label
-       className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
-       htmlFor="type"
-      >
-       {" "}
-       {t("form.jobType")}
-      </label>
-      <div className="relative">
-       <select
-        className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
-        id="type"
-        onChange={(e) => setJobtype(e.target.value)}
-       >
-        <option className="text-sm" value="">
-         {t("form.select")}
-        </option>
-        <option value={t("form.typeInternship")}>
-         {t("form.typeInternship")}
-        </option>
-        <option value={t("form.typePart")}>{t("form.typePart")}</option>
-        <option value={t("form.typeFull")}>{t("form.typeFull")}</option>
-       </select>
-
-       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
-        <RiArrowDropDownLine className="fill-current h-5 w-5" />
-       </div>
-      </div>
-     </div>
-
-     <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
-      <label
-       className="block uppercase tracking-wide text-darkblue gray-700 text-xs font-bold mb-2 dark:text-light"
-       htmlFor="status"
-      >
-       {" "}
-       {t("form.jobStatus")}
-      </label>
-      <div className="relative">
-       <select
-        className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
-        id="status"
-        onChange={(e) => setStatus(e.target.value)}
-       >
-        <option value="">{t("form.select")}</option>
-        <option value={t("form.statusApplied")}>
-         {t("form.statusApplied")}
-        </option>
-        <option value={t("form.statusPending")}>
-         {t("form.statusPending")}
-        </option>
-        <option value={t("form.statusInterviewing")}>
-         {t("form.statusInterviewing")}
-        </option>
-        <option value={t("form.statusHired")}>{t("form.statusHired")}</option>
-        <option value={t("form.statusRejected")}>
-         {t("form.statusRejected")}
-        </option>
-       </select>
-
-       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
-        <RiArrowDropDownLine className="fill-current h-5 w-5" />
-       </div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
+       <RiArrowDropDownLine className="fill-current h-5 w-5" />
       </div>
      </div>
     </div>
+    <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
+     <label
+      className="block uppercase tracking-wide text-darkblue gray-700 text-xs font-bold mb-2 dark:text-light"
+      htmlFor="status"
+     >
+      {" "}
+      {t("form.jobStatus")}
+     </label>
+     <div className="relative">
+      <select
+       className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
+       id="status"
+       onChange={(e) => setStatus(e.target.value)}
+      >
+       <option value="">{t("form.select")}</option>
+       <option value={t("form.statusApplied")}>
+        {t("form.statusApplied")}
+       </option>
+       <option value={t("form.statusPending")}>
+        {t("form.statusPending")}
+       </option>
+       <option value={t("form.statusInterviewing")}>
+        {t("form.statusInterviewing")}
+       </option>
+       <option value={t("form.statusHired")}>{t("form.statusHired")}</option>
+       <option value={t("form.statusRejected")}>
+        {t("form.statusRejected")}
+       </option>
+      </select>
+
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
+       <RiArrowDropDownLine className="fill-current h-5 w-5" />
+      </div>
+     </div>
+    </div>
+
     {!isfill && <Error className="text-danger" />}
     <div className="flex justify-center mt-5">
      <button

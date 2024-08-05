@@ -44,12 +44,6 @@ function Navbar() {
        {t("navbar.about")}
       </li>
      </NavLink>
-     <NavLink to="/login" onClick={toggleMobileMenu}>
-      <li className="hover:text-lightblue mb-8 transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">{t("navbar.login")}</li>
-     </NavLink>
-     <NavLink to="/signup" onClick={toggleMobileMenu}>
-      <li className="hover:text-lightblue mb-8 transition border-b0  border-darkblue hover:border-lightblue cursor-pointer">{t("navbar.signup")}</li>
-     </NavLink>
     </ul>
    </div>
   </>
@@ -102,12 +96,6 @@ function Navbar() {
        </NavLink>
        <NavLink to="/about">
         <li className="hover:text-lightblue">{t("navbar.about")}</li>
-       </NavLink>
-       <NavLink to="/login">
-        <li className="hover:text-lightblue">{t("navbar.login")}</li>
-       </NavLink>
-       <NavLink to="/signup">
-        <li className="hover:text-lightblue">{t("navbar.signup")}</li>
        </NavLink>
       </ul>
      </div>
