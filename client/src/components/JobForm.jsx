@@ -99,82 +99,84 @@ function JobForm({ onAddJob }) {
       {" "}
       {t("form.dateApplied")}
      </label>
-    <div className="">
-     <DatePicker
-      id="date"
-      className="w-full px-5 text-slate-900 rounded-md focus:outline-none focus:border focus:border-gray-600"
-      showIcon
-      toggleCalendarOnIconClick
-      selected={selectedDate}
-      onChange={(date) => {
-       setDateApplied(JSON.stringify(date).slice(1, 11));
-       setSelectedDate(date);
-      }}
-     />
-    </div>
-    </div>
-
-    <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
-     <label
-      className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
-      htmlFor="type"
-     >
-      {" "}
-      {t("form.jobType")}
-     </label>
-     <div className="relative">
-      <select
-       className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
-       id="type"
-       onChange={(e) => setJobtype(e.target.value)}
-      >
-       <option className="text-sm" value="">
-        {t("form.select")}
-       </option>
-       <option value={t("form.typeInternship")}>
-        {t("form.typeInternship")}
-       </option>
-       <option value={t("form.typePart")}>{t("form.typePart")}</option>
-       <option value={t("form.typeFull")}>{t("form.typeFull")}</option>
-      </select>
-
-      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
-       <RiArrowDropDownLine className="fill-current h-5 w-5" />
-      </div>
+     <div className="">
+      <DatePicker
+       id="date"
+       className="w-full px-5 text-slate-900 rounded-md focus:outline-none focus:border focus:border-gray-600"
+       showIcon
+       toggleCalendarOnIconClick
+       selected={selectedDate}
+       onChange={(date) => {
+        setDateApplied(JSON.stringify(date).slice(1, 11));
+        setSelectedDate(date);
+       }}
+      />
      </div>
     </div>
-    <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
-     <label
-      className="block uppercase tracking-wide text-darkblue gray-700 text-xs font-bold mb-2 dark:text-light"
-      htmlFor="status"
-     >
-      {" "}
-      {t("form.jobStatus")}
-     </label>
-     <div className="relative">
-      <select
-       className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
-       id="status"
-       onChange={(e) => setStatus(e.target.value)}
-      >
-       <option value="">{t("form.select")}</option>
-       <option value={t("form.statusApplied")}>
-        {t("form.statusApplied")}
-       </option>
-       <option value={t("form.statusPending")}>
-        {t("form.statusPending")}
-       </option>
-       <option value={t("form.statusInterviewing")}>
-        {t("form.statusInterviewing")}
-       </option>
-       <option value={t("form.statusHired")}>{t("form.statusHired")}</option>
-       <option value={t("form.statusRejected")}>
-        {t("form.statusRejected")}
-       </option>
-      </select>
 
-      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
-       <RiArrowDropDownLine className="fill-current h-5 w-5" />
+    <div className="w-fullgrid grid-cols-2">
+     <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
+      <label
+       className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
+       htmlFor="type"
+      >
+       {" "}
+       {t("form.jobType")}
+      </label>
+      <div className="relative">
+       <select
+        className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
+        id="type"
+        onChange={(e) => setJobtype(e.target.value)}
+       >
+        <option className="text-sm" value="">
+         {t("form.select")}
+        </option>
+        <option value={t("form.typeInternship")}>
+         {t("form.typeInternship")}
+        </option>
+        <option value={t("form.typePart")}>{t("form.typePart")}</option>
+        <option value={t("form.typeFull")}>{t("form.typeFull")}</option>
+       </select>
+
+       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
+        <RiArrowDropDownLine className="fill-current h-5 w-5" />
+       </div>
+      </div>
+     </div>
+     <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
+      <label
+       className="block uppercase tracking-wide text-darkblue gray-700 text-xs font-bold mb-2 dark:text-light"
+       htmlFor="status"
+      >
+       {" "}
+       {t("form.jobStatus")}
+      </label>
+      <div className="relative">
+       <select
+        className="block appearance-none w-full bg-gray border border-gray-200 text-darkblue py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white"
+        id="status"
+        onChange={(e) => setStatus(e.target.value)}
+       >
+        <option value="">{t("form.select")}</option>
+        <option value={t("form.statusApplied")}>
+         {t("form.statusApplied")}
+        </option>
+        <option value={t("form.statusPending")}>
+         {t("form.statusPending")}
+        </option>
+        <option value={t("form.statusInterviewing")}>
+         {t("form.statusInterviewing")}
+        </option>
+        <option value={t("form.statusHired")}>{t("form.statusHired")}</option>
+        <option value={t("form.statusRejected")}>
+         {t("form.statusRejected")}
+        </option>
+       </select>
+
+       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-darkblue">
+        <RiArrowDropDownLine className="fill-current h-5 w-5" />
+       </div>
       </div>
      </div>
     </div>
