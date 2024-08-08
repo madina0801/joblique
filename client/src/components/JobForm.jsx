@@ -114,7 +114,7 @@ function JobForm({ onAddJob }) {
      </div>
     </div>
 
-    <div className="w-fullgrid grid-cols-2">
+    <div className="-mx-3 flex flex-wrap">
      <div className="w-full md:w-1/3 px-1 mb-6 md:mb-0">
       <label
        className="block uppercase tracking-wide text-darkblue text-xs font-bold mb-2 dark:text-light"
