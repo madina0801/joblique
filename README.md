@@ -22,7 +22,7 @@ The documentation is segmented into these sections:
 
 - **Job Application Management:** Input and manage the details of your job applications like company name, job title and application status.
 
-### Upcoming Features
+### Roadmap
 
 - [X] Parse job listings from the Remotive RSS feed
 - [X] Revamp homepage styling
