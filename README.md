@@ -20,7 +20,7 @@ The documentation is segmented into these sections:
 
 ## ✨ Features
 
-- **Job Application Management:** Input and manage the details of your job applications, including company name, job title and application status.
+- **Job Application Management:** Input and manage the details of your job applications like company name, job title and application status.
 
 ### Upcoming Features
 
