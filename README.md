@@ -20,17 +20,16 @@ The documentation is segmented into these sections:
 
 ## ✨ Features
 
-- **Job Application Management:** Input and manage the details of the jobs you've applied to, like including company name, job title or application status. <br />
-- **Features I Plan to Add** <br />
-- [X] Parse jobs from Remotive RSS feed
-- [X] Change homepage styling
-- [ ] Improve form design
-- [ ] Add Edit feature to the JobItem card
-- [ ] Create JobPosting component and render it in JobPostings list
-- [ ] Implement login and signup logic
-      
-      
+- **Job Application Management:** Input and manage the details of your job applications, including company name, job title and application status.
 
+### Upcoming Features
+
+- [X] Parse job listings from the Remotive RSS feed
+- [X] Revamp homepage styling
+- [ ] Enhance form design
+- [ ] Add an edit option to the JobItem card
+- [ ] Develop a JobPosting component and render it in the JobPostings list
+- [ ] Implement user authentication with login and signup functionality
 ## 🛠️ Installation
 
 To install **Joblique**, follow these steps:
