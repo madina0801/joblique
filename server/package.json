@@ -13,14 +13,17 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.2",
-    "bcrypt": "^5.1.1",
+    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.3.0",
-    "nodemon": "^3.1.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
-    "rss-parser": "^3.13.0"
+    "rss-parser": "^3.13.0",
+    "tar": "7.5.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
