@@ -11,6 +11,8 @@ There are many ways you can contribute, including, but not limited to:
 - Writing code.
 - Writing tests.
 - Reporting bugs.
+- Improving UI.
+- Localisation to your language.
 
 ## ❗️ Rules
 
